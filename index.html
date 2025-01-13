@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGENCE - Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+    </style>
+  </head>
+  <body class="bg-[#f5f5f5] font-playfair">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center bg-[#b7b4af] border border-[#979e9a] rounded-lg py-6 px-10 mx-10 mt-8 shadow-lg"
+    >
+      <div
+        class="text-3xl font-playfair font-bold text-[#5b5b57] tracking-wide"
+      >
+        MEGENCE
+      </div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li>
+            <a
+              href="#"
+              class="text-[#5b5b57] text-lg font-medium hover:text-[#5b7f80] transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#5b5b57] text-lg font-medium hover:text-[#5b7f80] transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#5b5b57] text-lg font-medium hover:text-[#5b7f80] transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#5b5b57] text-lg font-medium hover:text-[#5b7f80] transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-[70vh] flex items-center justify-center text-center"
+    >
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center z-0"
+        style="background-image: url('./assets/background.jpeg')"
+      >
+        <div class="absolute inset-0 bg-[#b7b4af]/40"></div>
+        <!-- Softer overlay for premium feel -->
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 px-4">
+        <h1
+          class="text-5xl md:text-6xl font-playfair font-bold text-[#5b5b57] mb-6 drop-shadow-md"
+        >
+          Designs That Inspire
+        </h1>
+        <p class="text-base md:text-lg text-[#5b5b57] mb-6 font-playfair">
+          Transforming visions into reality with elegance and creativity.
+        </p>
+        <button
+          class="bg-[#5b5b57] text-white py-3 px-6 rounded-full text-base md:text-lg font-medium hover:bg-[#5b7f80] transition"
+        >
+          Explore Portfolio
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
