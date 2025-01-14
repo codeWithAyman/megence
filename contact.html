@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Contact - Magence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap"
@@ -24,7 +24,7 @@
       }
 
       .navbar {
-        background-color: #fff; /* Clean white background */
+        background-color: #ffffff; /* Clean white background */
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
       }
 
@@ -55,36 +55,63 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
       }
 
-      .about-section {
+      .contact-section {
         padding: 2rem;
         background-color: #ffffff;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
         transition: transform 0.3s ease-in-out;
+        width: 100%;
+        max-width: 800px;
       }
 
-      .about-section:hover {
+      .contact-section:hover {
         transform: translateY(-5px); /* Subtle lift on hover */
       }
 
-      .about-section h3 {
+      .contact-section h3 {
         font-size: 1.75rem;
         font-weight: 600;
         color: #495057;
+        margin-bottom: 1.5rem;
       }
 
-      .about-section p {
+      .contact-section form input,
+      .contact-section form textarea {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.25rem;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #495057;
+        background-color: #f8f9fa;
+        transition: border-color 0.3s ease-in-out;
+      }
+
+      .contact-section form input:focus,
+      .contact-section form textarea:focus {
+        border-color: #007bff; /* Elegant blue on focus */
+        outline: none;
+      }
+
+      .contact-section form button {
+        padding: 1rem 2rem;
+        background-color: #007bff;
+        color: white;
         font-size: 1.125rem;
-        color: #6c757d;
-        margin-top: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
       }
 
-      .about-section ul {
-        list-style-type: disc;
-        padding-left: 1.5rem;
-        color: #6c757d;
+      .contact-section form button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
       }
 
       .footer {
@@ -117,6 +144,30 @@
       .footer .social-icons a:hover {
         color: #007bff; /* Elegant blue on hover */
       }
+
+      .contact-section form button {
+        padding: 1rem 2rem;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 50px; /* Rounded edges for a modern look */
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2); /* Subtle shadow for depth */
+      }
+
+      .contact-section form button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        transform: translateY(-3px); /* Subtle lift on hover */
+        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Stronger shadow on hover */
+      }
+
+      .contact-section form button:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus ring with blue */
+      }
     </style>
   </head>
   <body>
@@ -130,40 +181,28 @@
     </header>
 
     <main class="px-8 py-12">
-      <h1 class="elegant-heading">À propos de moi</h1>
+      <h1 class="elegant-heading">Contactez-moi</h1>
       <hr class="hr-custom" />
 
       <div class="content-wrapper">
-        <div class="about-section">
-          <h3>Qui suis-je ?</h3>
-          <p>
-            Je suis un développeur passionné par la création de solutions web
-            innovantes. Mon expertise couvre le développement front-end et
-            back-end, avec une expérience dans la conception d'interfaces
-            utilisateurs élégantes et fonctionnelles. J'aime résoudre des
-            problèmes complexes et je suis toujours à la recherche de nouveaux
-            défis.
-          </p>
-        </div>
-
-        <div class="about-section">
-          <h3>Mes compétences</h3>
-          <ul>
-            <li>Développement Web (HTML, CSS, JavaScript)</li>
-            <li>Frameworks: React, Vue.js, Next.js</li>
-            <li>Backend: Node.js, Express, MongoDB</li>
-            <li>UI/UX Design</li>
-          </ul>
-        </div>
-
-        <div class="about-section">
-          <h3>Mes intérêts</h3>
-          <p>
-            En dehors du développement, je suis passionné par la photographie,
-            la musique, et le voyage. J'aime explorer de nouveaux endroits et
-            capturer des moments spéciaux à travers l'objectif de mon appareil
-            photo.
-          </p>
+        <div class="contact-section">
+          <h3>Envoyez-moi un message</h3>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Votre email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Votre message"
+              required
+            ></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
         </div>
       </div>
     </main>
