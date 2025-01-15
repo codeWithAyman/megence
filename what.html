@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body class="h-screen w-screen text-white">
+    <!-- Background Image Container -->
+    <div
+      class="h-full w-full absolute top-0 left-0 bg-cover bg-center"
+      style="
+        background-image: url('./assets/index2.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    ></div>
+
+    <!-- Content Container -->
+    <div class="relative flex h-full items-center pl-12 z-10">
+      <!-- Links and Vertical Line -->
+      <div class="flex items-center space-x-6">
+        <!-- Links -->
+        <div class="space-y-4 text-lg">
+          <a href="./about.html" class="hover:underline block">À propos</a>
+          <a href="./project.html" class="hover:underline block">Projets</a>
+          <a href="./contact.html" class="hover:underline block">Contact</a>
+        </div>
+        <!-- Vertical Line -->
+        <div class="h-32 w-px bg-white"></div>
+      </div>
+      <!-- Title -->
+      <h1
+        class="text-6xl font-bold ml-8"
+        style="font-family: 'Playfair Display', serif"
+      >
+        Magence
+      </h1>
+    </div>
+  </body>
+</html>
