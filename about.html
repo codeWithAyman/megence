@@ -3,183 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Magence</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <style>
-      body {
-        background-color: #f5f5dc; /* Soft off-white */
-        font-family: "Inter", sans-serif;
-        color: #212529; /* Dark gray text */
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
+
+      html {
+        font-family: "Roboto", sans-serif;
+        zoom: 0.8; /* Ajuste le zoom pour donner l'impression de 80 % à 100 % */
       }
 
-      .brand-name {
+      h1,
+      h2,
+      h3,
+      h4 {
         font-family: "Playfair Display", serif;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #343a40; /* Darker gray */
-      }
-
-      .navbar {
-        background-color: #fff; /* Clean white background */
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-      }
-
-      .navbar nav a {
-        color: #495057; /* Soft dark gray */
-        transition: color 0.3s ease-in-out;
-      }
-
-      .navbar nav a:hover {
-        color: #007bff; /* Elegant blue on hover */
-      }
-
-      .elegant-heading {
-        font-family: "Playfair Display", serif;
-        font-weight: 700;
-        font-size: 2.5rem;
-        color: #495057;
-        margin-bottom: 1rem;
-      }
-
-      .hr-custom {
-        width: 40%;
-        margin: 2.5rem auto;
-        border-top: 2px solid #dee2e6;
-      }
-
-      .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-
-      .about-section {
-        padding: 2rem;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .about-section:hover {
-        transform: translateY(-5px); /* Subtle lift on hover */
-      }
-
-      .about-section h3 {
-        font-size: 1.75rem;
-        font-weight: 600;
-        color: #495057;
-      }
-
-      .about-section p {
-        font-size: 1.125rem;
-        color: #6c757d;
-        margin-top: 1rem;
-      }
-
-      .about-section ul {
-        list-style-type: disc;
-        padding-left: 1.5rem;
-        color: #6c757d;
-      }
-
-      .footer {
-        background-color: #343a40; /* Dark footer */
-        color: white;
-        padding: 3rem 0;
-        text-align: center;
-        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on top */
-      }
-
-      .footer .footer-links a {
-        color: white;
-        margin: 0 1rem;
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s ease-in-out;
-      }
-
-      .footer .footer-links a:hover {
-        color: #007bff; /* Elegant blue on hover */
-      }
-
-      .footer .social-icons a {
-        color: white;
-        margin: 0 1rem;
-        font-size: 1.5rem;
-        transition: color 0.3s ease-in-out;
-      }
-
-      .footer .social-icons a:hover {
-        color: #007bff; /* Elegant blue on hover */
       }
     </style>
   </head>
-  <body>
-    <header class="navbar flex justify-between items-center px-8 py-6">
-      <nav class="space-x-8 text-sm flex items-center">
-        <a href="./index.html" class="hover:underline">À propos</a>
-        <a href="./project.html" class="hover:underline">Projets</a>
-        <a href="./contact.html" class="hover:underline">Contact</a>
+  <body class="bg-[#b7b4af] text-gray-800">
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-16 py-20">
+      <div class="text-lg font-bold uppercase tracking-widest">Magence</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="./index.html" class="text-gray-600 hover:text-black"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="text-gray-600 hover:text-black"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="./project.html" class="text-gray-600 hover:text-black"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="text-gray-600 hover:text-black"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </nav>
-      <div class="text-lg brand-name">Magence</div>
+      <div class="flex space-x-4">
+        <button class="text-gray-600 hover:text-black">.</button>
+        <button class="text-gray-600 hover:text-black">.</button>
+        <button class="text-gray-600 hover:text-black">.</button>
+      </div>
     </header>
 
-    <main class="px-8 py-12">
-      <h1 class="elegant-heading">À propos de moi</h1>
-      <hr class="hr-custom" />
+    <!-- Section À propos -->
+    <main class="px-32 py-16">
+      <h1 class="text-6xl font-semibold mb-4">À propos de moi</h1>
+      <hr class="border-black mb-6 w-1/4" />
 
-      <div class="content-wrapper">
-        <div class="about-section">
-          <h3>Qui suis-je ?</h3>
-          <p>
-            Je suis un développeur passionné par la création de solutions web
-            innovantes. Mon expertise couvre le développement front-end et
-            back-end, avec une expérience dans la conception d'interfaces
-            utilisateurs élégantes et fonctionnelles. J'aime résoudre des
-            problèmes complexes et je suis toujours à la recherche de nouveaux
-            défis.
+      <div
+        class="flex flex-col md:flex-row items-start md:items-start justify-between"
+      >
+        <div class="flex flex-col space-y-4" style="padding-top: 70px">
+          <p class="text-gray-600">
+            Je suis passionné par le design, le développement web et les
+            technologies. Mon objectif est de créer des expériences numériques
+            intuitives et esthétiques. Avec plusieurs années d'expérience,
+            j'aime explorer de nouvelles approches pour résoudre des problèmes
+            complexes tout en mettant l'accent sur la simplicité et
+            l'efficacité.
+          </p>
+          <p class="text-gray-600">
+            Je suis également un apprenant continu, toujours curieux d'explorer
+            les dernières tendances et technologies dans le monde du
+            développement. J'ai travaillé sur plusieurs projets web, utilisant
+            des outils modernes comme React, Tailwind CSS et Next.js.
           </p>
         </div>
 
-        <div class="about-section">
-          <h3>Mes compétences</h3>
-          <ul>
-            <li>Développement Web (HTML, CSS, JavaScript)</li>
-            <li>Frameworks: React, Vue.js, Next.js</li>
-            <li>Backend: Node.js, Express, MongoDB</li>
-            <li>UI/UX Design</li>
-          </ul>
-        </div>
-
-        <div class="about-section">
-          <h3>Mes intérêts</h3>
-          <p>
-            En dehors du développement, je suis passionné par la photographie,
-            la musique, et le voyage. J'aime explorer de nouveaux endroits et
-            capturer des moments spéciaux à travers l'objectif de mon appareil
-            photo.
-          </p>
-        </div>
+        <!-- Section Image -->
+        <section
+          class="grid grid-cols-1 gap-12 mt-0 ml-8"
+          style="padding-right: 300px; padding-top: 30px"
+        >
+          <div class="text-center">
+            <img
+              src="./assets/white.jpg"
+              alt="Portrait"
+              class="mx-auto mb-6 w-64 h-64 rounded-full"
+            />
+            <h3 class="text-lg font-semibold">Mon Portrait</h3>
+            <p class="text-gray-600">
+              Une brève introduction de ma personnalité et de mes passions.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
+    <footer class="bg-gray-800 text-gray-200 py-12 mt-16">
+      <div
+        class="container mx-auto px-32 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="text-center md:text-left">
+          <h2 class="text-3xl font-semibold text-white mb-2">
+            Suivez-moi sur les réseaux sociaux
+          </h2>
+          <p class="text-gray-400">
+            Restez connecté et suivez mes dernières mises à jour et créations.
+          </p>
+        </div>
 
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="#">À propos</a>
-        <a href="#">Projets</a>
-        <a href="#">Contact</a>
+        <div class="flex flex-col items-center md:items-end mt-8 md:mt-0">
+          <h3 class="text-xl font-semibold text-white mb-4">Liens sociaux</h3>
+          <div class="flex space-x-6">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="text-gray-400 hover:text-indigo-500 transition duration-300"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="text-gray-400 hover:text-indigo-500 transition duration-300"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              class="text-gray-400 hover:text-indigo-500 transition duration-300"
+              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+            >
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="text-gray-400 hover:text-indigo-500 transition duration-300"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="social-icons mt-4">
-        <a href="#" class="hover:text-gray-400">Facebook</a>
-        <a href="#" class="hover:text-gray-400">Twitter</a>
-        <a href="#" class="hover:text-gray-400">Instagram</a>
+
+      <div class="text-center mt-8 border-t border-gray-600 pt-4">
+        <p class="text-gray-400 text-sm">
+          &copy; 2025 MonSiteWeb. Tous droits réservés.
+        </p>
       </div>
-      <p class="mt-4 text-sm">&copy; 2025 Magence. Tous droits réservés.</p>
     </footer>
   </body>
 </html>

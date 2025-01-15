@@ -1,158 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magence</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
-
-      html {
-        font-family: "Roboto", sans-serif;
-        zoom: 0.8; /* Adjust zoom to make it look like 80% at 100% zoom */
+      * {
+        margin: 0;
+        padding: 0;
       }
 
-      h1,
-      h2,
-      h3,
-      h4 {
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      h1 {
         font-family: "Playfair Display", serif;
       }
     </style>
   </head>
-  <body class="bg-white text-gray-800">
-    <!-- Navbar -->
-    <header class="flex justify-between items-center px-16 py-20">
-      <div class="text-lg font-bold uppercase tracking-widest">Magence</div>
-      <nav>
-        <ul class="flex space-x-6">
-          <li>
-            <a href="#" class="text-gray-600 hover:text-black">Accueil</a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-600 hover:text-black">À propos</a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-600 hover:text-black">Projets</a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-600 hover:text-black">ontactez-moi </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="flex space-x-4">
-        <button class="text-gray-600 hover:text-black">.</button>
-        <button class="text-gray-600 hover:text-black">.</button>
-      </div>
-    </header>
+  <body class="h-screen w-screen text-white">
+    <!-- Background Image Container -->
+    <div
+      class="h-full w-full absolute top-0 left-0 bg-cover bg-center"
+      style="
+        background-image: url('./assets/magence.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    ></div>
 
-    <!-- Catalog Section -->
-    <main class="px-32 py-16">
-      <h1 class="text-6xl font-semibold mb-4">Projets</h1>
-      <hr class="border-gray-300 mb-6 w-1/4" />
-
-      <div
-        class="flex flex-col md:flex-row items-start md:items-start justify-between"
-      >
-        <div class="flex flex-col space-y-4">
-          <a href="#" class="text-gray-600 hover:text-black">Tout le design</a>
-          <a href="#" class="text-gray-600 hover:text-black"
-            >Vaisselle design</a
-          >
-          <a href="#" class="text-gray-600 hover:text-black"> créatives</a>
-          <a href="#" class="text-gray-600 hover:text-black"> intérieure</a>
+    <!-- Content Container -->
+    <div class="relative flex h-full items-center pl-12 z-10">
+      <!-- Links and Vertical Line -->
+      <div class="flex items-center space-x-6">
+        <!-- Links -->
+        <div class="space-y-4 text-lg">
+          <a href="./about.html" class="hover:underline block">À propos</a>
+          <a href="./project.html" class="hover:underline block">Projets</a>
+          <a href="./contact.html" class="hover:underline block">Contact</a>
         </div>
-
-        <!-- Product Grid -->
-        <section
-          class="grid grid-cols-3 gap-12 mt-0 ml-8"
-          style="padding-right: 300px; padding-top: 30px"
-        >
-          <!-- Product Item -->
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Lillo Grey Vase</h3>
-            <p class="text-gray-600">15 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Shonna Pot</h3>
-            <p class="text-gray-600">16 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Kara Vase</h3>
-            <p class="text-gray-600">27 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Ceramic Fruit Bowl</h3>
-            <p class="text-gray-600">18 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Ivory Design Plate</h3>
-            <p class="text-gray-600">16 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Kita Bowl</h3>
-            <p class="text-gray-600">15 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Ramona Bowl</h3>
-            <p class="text-gray-600">18 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Pomona White Mug</h3>
-            <p class="text-gray-600">25 $</p>
-          </div>
-          <div class="text-center">
-            <img
-              src="./assets/white.jpg"
-              alt=""
-              class="mx-auto mb-6 w-64 h-64"
-            />
-            <h3 class="text-lg font-semibold">Seabell Bowl</h3>
-            <p class="text-gray-600">16 $</p>
-          </div>
-        </section>
+        <!-- Vertical Line -->
+        <div class="h-32 w-px bg-white"></div>
       </div>
-    </main>
+      <!-- Title -->
+      <h1 class="text-6xl font-bold ml-8">Magence</h1>
+    </div>
   </body>
 </html>
