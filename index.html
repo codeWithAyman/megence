@@ -13,7 +13,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* * { font-family: 'Quicksand', sans-serif !important; } */
+  /* * { font-family: 'Quicksand', sans-serif !important; } booo */
+
+  @media only screen and (max-width: 768px) {
+    .gone {
+        display: none;
+    }
+}
+
 
 </style>
     <link
@@ -16322,9 +16329,8 @@ style="background-color:#b7b4af;"
                                                 width: 70vw; 
                                                 height: auto;
                                                 padding-bottom: 20rem;
-                                                position:absolute;
-                                                
-                                                "
+                                                position:absolute;"
+                                                class="gone"
                                                 >
                                   </span>
 
@@ -16361,6 +16367,7 @@ style="background-color:#b7b4af;"
                                     aria-hidden="true"
                                     aria-label=""
                                     style="color: black;margin-top: 130%; margin-left:200%;"
+                                    class="gone"
                                   >
                                     <g>
                                       <path
@@ -16380,7 +16387,7 @@ style="background-color:#b7b4af;"
                                   style="padding-right: 40px;padding-top: 90px;color:black;"
                                   
                                 >
-                                  <h2 class="font_2 wixui-rich-text__text" 
+                                  <h2 class="font_2 wixui-rich-text__text gone" 
                                   style="color:black; margin-bottom: 90%; margin-left:10%; font-weight: 700; "
                                   >
                                     <span class="wixui-rich-text__text"
@@ -16592,20 +16599,22 @@ style="background-color:#b7b4af;"
 
                             
                               <div
-                                class="comp-lvqlkbn4 UHSxqn"
+                                class="comp-lvqlkbn4 UHSxqn gone"
                                 id="comp-lvqlkbn4"
                                 aria-disabled="false"
                               >
-                                <a
-                                  data-testid="linkElement"
-                                  href="https://www.designmeparis.com/blank"
-                                  target="_self"
-                                  class="VU4Mnk wixui-button PlZyDq"
-                                  aria-disabled="false"
-                                  ><span class="w4Vxx6 wixui-button__label"
-                                    >DECOUVRIR</span
-                                  ></a
-                                >
+                              <a
+                              data-testid="linkElement"
+                              href="https://www.designmeparis.com/blank"
+                              target="_self"
+                              class="VU4Mnk wixui-button PlZyDq gone"
+                              aria-disabled="false"
+                            >
+                              <button class="w4Vxx6 wixui-button__label gone" >
+                                DECOUVRIR
+                              </button>
+                            </a>
+                            
                               </div>
                             </section>
                             
