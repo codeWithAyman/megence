@@ -25298,64 +25298,245 @@
                               id="comp-lvvad3uz_r_comp-lj2tel67"
                               class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lvvad3uz_r_comp-lj2tel67 wixui-rich-text"
                               data-testid="richTextElement"
-                            >
-                             
-                            </div>
+                            ></div>
                             <div
                               id="comp-lvvad3uz_r_comp-luzx92zu"
-                              class="comp-lvvad3uz_r_comp-luzx92zu-container c_pphB"
+                              class="comp-lvvad3uz_r_comp-luzx92zu-container"
+                              style="position: relative; z-index: 1000"
                             >
                               <nav
                                 aria-label="Site"
                                 class="HamburgerOpenButton3651513085__nav"
                               >
+                                <!-- Sidebar -->
                                 <div
-                                  id="comp-lvvad3uz_r_comp-luzx930h"
-                                  class="StylableButton2545352419__root HamburgerOpenButton3651513085__root comp-lvvad3uz_r_comp-luzx930h"
+                                  id="comp-kbgakxea_r_comp-luzx930h"
+                                  class="StylableButton2545352419__root HamburgerOpenButton3651513085__root comp-kbgakxea_r_comp-luzx930h"
                                   data-semantic-classname="hamburger-open-button"
                                 >
+                                  <!-- Sidebar with inline styles -->
+                                  <div
+                                    id="sidebar"
+                                    style="
+                                      position: fixed;
+                                      top: 0;
+                                      right: -50%;
+                                      width: 50%;
+                                      height: 100%;
+                                      background-color: #ffffff;
+                                      color: #333;
+                                      transition: right 0.3s ease-in-out;
+                                      padding: 20px;
+                                      box-sizing: border-box;
+                                      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+                                      font-family: 'madefor-text', sans-serif;
+                                      display: flex;
+                                      flex-direction: column;
+                                      align-items: center;
+                                      justify-content: space-between;
+                                    "
+                                  >
+                                    <!-- Close Button -->
+                                    <button
+                                      onclick="toggleSidebar(false)"
+                                      style="
+                                        position: absolute;
+                                        top: 20px;
+                                        left: 20px;
+                                        background: none;
+                                        border: none;
+                                        font-size: 30px;
+                                        color: #333;
+                                        cursor: pointer;
+                                      "
+                                    >
+                                      &times;
+                                    </button>
+
+                                    <!-- Sidebar Content -->
+                                    <div
+                                      style="
+                                        flex-grow: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 40px;
+                                        background-color: #ffffff;
+                                        border-radius: 12px;
+                                        box-shadow: 0 10px 20px
+                                          rgba(0, 0, 0, 0.05);
+                                        max-width: 600px;
+                                        margin: 0 auto;
+                                        font-family: 'Arial', sans-serif;
+                                      "
+                                    >
+                                      <h2
+                                        style="
+                                          font-size: 48px;
+                                          font-weight: 700;
+                                          color: #2c3e50;
+                                          margin-bottom: 30px;
+                                          letter-spacing: 2px;
+                                          font-family: 'Poppins', sans-serif;
+                                        "
+                                      >
+                                        Magence
+                                      </h2>
+                                      <p
+                                        style="
+                                          font-size: 18px;
+                                          color: #7f8c8d;
+                                          margin-bottom: 30px;
+                                          font-style: italic;
+                                          line-height: 1.6;
+                                          text-align: center;
+                                        "
+                                      >
+                                        Une expérience fluide et raffinée.
+                                      </p>
+                                      <a
+                                        href="./index.html"
+                                        style="
+                                          color: #333;
+                                          font-size: 20px;
+                                          line-height: 36px;
+                                          display: block;
+                                          padding: 14px 0;
+                                          text-decoration: none;
+                                          border-bottom: 2px solid #ddd;
+                                          transition: all 0.3s ease;
+                                          text-align: center;
+                                          margin-bottom: 18px;
+                                        "
+                                      >
+                                        Accueil
+                                      </a>
+                                      <a
+                                        href="./services.html"
+                                        style="
+                                          color: #333;
+                                          font-size: 20px;
+                                          line-height: 36px;
+                                          display: block;
+                                          padding: 14px 0;
+                                          text-decoration: none;
+                                          border-bottom: 2px solid #ddd;
+                                          transition: all 0.3s ease;
+                                          text-align: center;
+                                          margin-bottom: 18px;
+                                        "
+                                      >
+                                        Services
+                                      </a>
+                                      <a
+                                        href="./contact.html"
+                                        style="
+                                          color: #333;
+                                          font-size: 20px;
+                                          line-height: 36px;
+                                          display: block;
+                                          padding: 14px 0;
+                                          text-decoration: none;
+                                          border-bottom: 2px solid #ddd;
+                                          transition: all 0.3s ease;
+                                          text-align: center;
+                                          margin-bottom: 18px;
+                                        "
+                                      >
+                                        Contact
+                                      </a>
+                                      <a
+                                        href="./about.html"
+                                        style="
+                                          color: #333;
+                                          font-size: 20px;
+                                          line-height: 36px;
+                                          display: block;
+                                          padding: 14px 0;
+                                          text-decoration: none;
+                                          border-bottom: 2px solid #ddd;
+                                          transition: all 0.3s ease;
+                                          text-align: center;
+                                        "
+                                      >
+                                        À propos
+                                      </a>
+                                    </div>
+                                  </div>
+
+                                  <!-- Button to open sidebar -->
                                   <button
                                     type="button"
-                                    class="StylableButton2545352419__root comp-lvvad3uz_r_comp-luzx930h-styleId__root wixui-hamburger-open-button"
+                                    class="StylableButton2545352419__root comp-kbgakxea_r_comp-luzx930h-styleId__root wixui-hamburger-open-button"
                                     data-testid="buttonContent"
                                     aria-expanded="false"
                                     aria-haspopup="true"
                                     aria-label="Menu"
+                                    onclick="toggleSidebar(true)"
+                                    style="
+                                      background-color: white;
+                                      color: white;
+                                      font-size: 16px;
+                                      cursor: pointer;
+                                      border: none;
+                                      padding: 10px 15px;
+                                      border-radius: 5px;
+                                      transition: background-color 0.3s ease;
+                                    "
                                   >
                                     <span
                                       class="StylableButton2545352419__container"
-                                      ><span
+                                    >
+                                      <span
                                         class="StylableButton2545352419__label wixui-hamburger-open-button__label"
                                         data-testid="stylablebutton-label"
                                         >Menu</span
-                                      ><span
+                                      >
+                                      <span
                                         class="StylableButton2545352419__icon wixui-hamburger-open-button__icon"
                                         aria-hidden="true"
                                         data-testid="stylablebutton-icon"
-                                        ><span
-                                          ><!--?xml version="1.0" encoding="UTF-8"?-->
-                                          <svg
-                                            data-bbox="44 84 112 32"
-                                            viewBox="0 0 200 200"
-                                            height="200"
-                                            width="200"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            data-type="shape"
-                                          >
-                                            <g>
-                                              <path
-                                                d="M156 84v6H44v-6h112z"
-                                              ></path>
-                                              <path
-                                                d="M156 110v6H96v-6h60z"
-                                              ></path>
-                                            </g>
-                                          </svg> </span></span
-                                    ></span>
+                                      >
+                                        <svg
+                                          data-bbox="44 84 112 32"
+                                          viewBox="0 0 200 200"
+                                          height="20"
+                                          width="20"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          data-type="shape"
+                                        >
+                                          <g>
+                                            <path
+                                              d="M156 84v6H44v-6h112z"
+                                            ></path>
+                                            <path
+                                              d="M156 110v6H96v-6h60z"
+                                            ></path>
+                                          </g>
+                                        </svg>
+                                      </span>
+                                    </span>
                                   </button>
                                 </div>
+
+                                <!-- JavaScript to toggle sidebar -->
+                                <script>
+                                  function toggleSidebar(show) {
+                                    const sidebar =
+                                      document.getElementById("sidebar");
+                                    if (show) {
+                                      sidebar.style.display = "block";
+                                      sidebar.style.right = "0";
+                                    } else {
+                                      sidebar.style.display = "none";
+                                      sidebar.style.right = "-50%";
+                                    }
+                                  }
+                                </script>
                               </nav>
                             </div>
+
                             <div
                               id="comp-lvvad3uz_r_comp-lvu0zwhr"
                               class="TWFxr5"
