@@ -31687,14 +31687,13 @@
                                       <wow-image
                                         id="img-comp-lwcmv6g7"
                                         data-is-responsive="true"
-                                        data-image-info='{"containerId":"comp-lwcmv6g7","alignType":"center","parallaxSpeed":1.5,"sourceSets":[],"imageData":{"uri":"95dd7e_3c69b8ebecfa44c8848472900df0c04e~mv2.jpg","width":4425,"height":6638,"alt":"","displayMode":"fill","focalPoint":{"x":50,"y":50},"scrollEffect":"none"},"hasAnimation":false,"encoding":"AVIF"}'
                                         data-has-ssr-src=""
                                         data-motion-part="BG_IMG comp-lwcmv6g7"
                                         class="Ux33nC"
                                         ><picture
                                           ><img
                                             fetchpriority="high"
-                                            src="./contact_files/95dd7e_3c69b8ebecfa44c8848472900df0c04e~mv2.jpg"
+                                            src="./images/contact.jpeg"
                                             alt=""
                                             style="
                                               object-fit: cover;
@@ -31890,262 +31889,188 @@
                                                     );
                                                   "
                                                 >
-                                                  <div class="form-container">
-                                                    <label>PRENOM</label>
-                                                    <input
-                                                      type="text"
-                                                      class="input-field"
-                                                    />
-
-                                                    <label>NOM</label>
-                                                    <input
-                                                      type="text"
-                                                      class="input-field"
-                                                    />
-
-                                                    <label>E-MAIL *</label>
-                                                    <input
-                                                      type="email"
-                                                      class="input-field"
-                                                    />
-
-                                                    <label>TELEPHONE *</label>
-                                                    <input
-                                                      type="tel"
-                                                      class="input-field"
-                                                    />
-
-                                                    <label
-                                                      >Votre besoin *</label
-                                                    >
-                                                    <div class="dropdown">
-                                                      <button
-                                                        class="dropdown-btn"
-                                                      >
-                                                        Sélectionner votre
-                                                        besoin ▼
-                                                      </button>
-                                                      <div
-                                                        class="dropdown-list"
-                                                      >
-                                                        <div>
-                                                          Je souhaite créer ma
-                                                          stratégie de branding
-                                                        </div>
-                                                        <div>
-                                                          Je souhaite créer ou
-                                                          mettre à jour mon site
-                                                          web
-                                                        </div>
-                                                        <div>
-                                                          Je souhaite créer des
-                                                          supports de
-                                                          communication
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-                                                    <label
-                                                      >QUELQUES MOTS *</label
-                                                    >
-                                                    <input
-                                                      type="text"
-                                                      class="input-field"
-                                                    />
-
-                                                    <button class="submit-btn">
-                                                      ENVOYER
+                                                <div class="form-container">
+                                                  <label>PRENOM</label>
+                                                  <input type="text" class="input-field" />
+                                                
+                                                  <label>NOM</label>
+                                                  <input type="text" class="input-field" />
+                                                
+                                                  <label>E-MAIL *</label>
+                                                  <input type="email" class="input-field" />
+                                                
+                                                  <label>TELEPHONE *</label>
+                                                  <input type="tel" class="input-field" />
+                                                
+                                                  <label>Votre besoin *</label>
+                                                  <div class="dropdown">
+                                                    <button class="dropdown-btn">
+                                                      ▼
                                                     </button>
+                                                    <div class="dropdown-list">
+                                                      <div>Je souhaite créer ma stratégie de branding</div>
+                                                      <div>Je souhaite créer ou mettre à jour mon site web</div>
+                                                      <div>Je souhaite créer des supports de communication</div>
+                                                    </div>
                                                   </div>
-
-                                                  <script>
-                                                    document
-                                                      .querySelector(
-                                                        ".dropdown-btn"
-                                                      )
-                                                      .addEventListener(
-                                                        "click",
-                                                        function () {
-                                                          document
-                                                            .querySelector(
-                                                              ".dropdown"
-                                                            )
-                                                            .classList.toggle(
-                                                              "active"
-                                                            );
-                                                        }
-                                                      );
-                                                    document
-                                                      .querySelectorAll(
-                                                        ".dropdown-list div"
-                                                      )
-                                                      .forEach((item) => {
-                                                        item.addEventListener(
-                                                          "click",
-                                                          function () {
-                                                            document.querySelector(
-                                                              ".dropdown-btn"
-                                                            ).innerText =
-                                                              this.innerText;
-                                                            document
-                                                              .querySelector(
-                                                                ".dropdown"
-                                                              )
-                                                              .classList.remove(
-                                                                "active"
-                                                              );
-                                                          }
-                                                        );
-                                                      });
-                                                    document.addEventListener(
-                                                      "click",
-                                                      function (event) {
-                                                        if (
-                                                          !document
-                                                            .querySelector(
-                                                              ".dropdown"
-                                                            )
-                                                            .contains(
-                                                              event.target
-                                                            )
-                                                        ) {
-                                                          document
-                                                            .querySelector(
-                                                              ".dropdown"
-                                                            )
-                                                            .classList.remove(
-                                                              "active"
-                                                            );
-                                                        }
-                                                      }
-                                                    );
-                                                  </script>
-                                                  <style>
-.form-container {
-  width: 440px; /* Default width for larger screens */
-  padding: 22px;
-  transform: scale(1.1);
-  transform-origin: center;
-}
-
-/* Responsive for mobile screens */
-@media (max-width: 768px) {
-  .form-container {
-    width: 90%; /* Adjusts width dynamically */
-    transform: none; /* Removes scaling on smaller screens */
-    padding: 15px;
-  }
-}
-
-label {
-  display: block;
-  margin: 22px 0 6px;
-  font-weight: bold;
-  color: black;
-}
-
-.input-field {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid white;
-  background: transparent;
-  outline: none;
-  font-size: 17.6px;
-  padding: 5.5px;
-  color: black;
-}
-
-.dropdown {
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-
-.dropdown-btn {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  padding: 5.5px;
-  font-size: 17.6px;
-  text-align: left;
-  cursor: pointer;
-  color: black;
-}
-
-.dropdown-list {
-  display: none;
-  position: absolute;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.dropdown-list div {
-  padding: 11px;
-  transition: background 0.3s ease;
-  color: black;
-}
-
-.dropdown-list div:hover {
-  background: #ddd;
-}
-
-.dropdown.active .dropdown-list {
-  display: block;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.submit-btn {
-  width: 100%;
-  background: black;
-  color: white;
-  padding: 11px;
-  border: none;
-  margin-top: 22px;
-  cursor: pointer;
-  font-size: 17.6px;
-  text-align: center;
-}
-
-.submit-btn:hover {
-  background: #333;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 480px) {
-  .form-container {
-    width: 95%;
-    padding: 12px;
-  }
-
-  .input-field,
-  .dropdown-btn {
-    font-size: 16px;
-    padding: 4.5px;
-  }
-
-  .submit-btn {
-    font-size: 16px;
-    padding: 10px;
-  }
-}
-
-                                                  </style>
+                                                
+                                                  <label>QUELQUES MOTS *</label>
+                                                  <input type="text" class="input-field" />
+                                                
+                                                  <button class="submit-btn">ENVOYER</button>
+                                                </div>
+                                                
+                                                <script>
+                                                  document.querySelector(".dropdown-btn").addEventListener("click", function () {
+                                                    document.querySelector(".dropdown").classList.toggle("active");
+                                                  });
+                                                
+                                                  document.querySelectorAll(".dropdown-list div").forEach((item) => {
+                                                    item.addEventListener("click", function () {
+                                                      document.querySelector(".dropdown-btn").innerText = this.innerText;
+                                                      document.querySelector(".dropdown").classList.remove("active");
+                                                    });
+                                                  });
+                                                
+                                                  document.addEventListener("click", function (event) {
+                                                    if (!document.querySelector(".dropdown").contains(event.target)) {
+                                                      document.querySelector(".dropdown").classList.remove("active");
+                                                    }
+                                                  });
+                                                </script>
+                                                
+                                                <style>
+                                                  .form-container {
+                                                    width: 440px; /* Default width for larger screens */
+                                                    padding: 22px;
+                                                    transform: scale(1.1);
+                                                    transform-origin: center;
+                                                    font-family: "Times New Roman", serif;
+                                                    color: white;
+                                                  }
+                                                
+                                                  /* Responsive for mobile screens */
+                                                  @media (max-width: 768px) {
+                                                    .form-container {
+                                                      width: 90%; /* Adjusts width dynamically */
+                                                      transform: none; /* Removes scaling on smaller screens */
+                                                      padding: 15px;
+                                                    }
+                                                  }
+                                                
+                                                  label {
+                                                    display: block;
+                                                    margin: 22px 0 6px;
+                                                    font-weight: bold;
+                                                    color: white;
+                                                    font-family: "Times New Roman", serif;
+                                                  }
+                                                
+                                                  .input-field {
+                                                    width: 100%;
+                                                    border: none;
+                                                    border-bottom: 2px solid white;
+                                                    background: transparent;
+                                                    outline: none;
+                                                    font-size: 17.6px;
+                                                    padding: 5.5px;
+                                                    color: white;
+                                                    font-family: "Times New Roman", serif;
+                                                  }
+                                                
+                                                  .dropdown {
+                                                    position: relative;
+                                                    width: 100%;
+                                                    cursor: pointer;
+                                                  }
+                                                
+                                                  .dropdown-btn {
+                                                    width: 100%;
+                                                    background: transparent;
+                                                    border: none;
+                                                    border-bottom: 2px solid white;
+                                                    padding: 5.5px;
+                                                    font-size: 17.6px;
+                                                    text-align: left;
+                                                    cursor: pointer;
+                                                    color: white;
+                                                    font-family: "Times New Roman", serif;
+                                                  }
+                                                
+                                                  .dropdown-list {
+                                                    display: none;
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    background: white;
+                                                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                                                    z-index: 10;
+                                                    border-radius: 5px;
+                                                    overflow: hidden;
+                                                  }
+                                                
+                                                  .dropdown-list div {
+                                                    padding: 11px;
+                                                    transition: background 0.3s ease;
+                                                    color: black;
+                                                  }
+                                                
+                                                  .dropdown-list div:hover {
+                                                    background: #ddd;
+                                                  }
+                                                
+                                                  .dropdown.active .dropdown-list {
+                                                    display: block;
+                                                    animation: fadeIn 0.3s ease-in-out;
+                                                  }
+                                                
+                                                  @keyframes fadeIn {
+                                                    from {
+                                                      opacity: 0;
+                                                      transform: translateY(-10px);
+                                                    }
+                                                    to {
+                                                      opacity: 1;
+                                                      transform: translateY(0);
+                                                    }
+                                                  }
+                                                
+                                                  .submit-btn {
+                                                    width: 100%;
+                                                    background: black;
+                                                    color: white;
+                                                    padding: 11px;
+                                                    border: none;
+                                                    margin-top: 22px;
+                                                    cursor: pointer;
+                                                    font-size: 17.6px;
+                                                    text-align: center;
+                                                    font-family: "Times New Roman", serif;
+                                                  }
+                                                
+                                                  .submit-btn:hover {
+                                                    background: #333;
+                                                  }
+                                                
+                                                  /* Responsive styles for smaller screens */
+                                                  @media (max-width: 480px) {
+                                                    .form-container {
+                                                      width: 95%;
+                                                      padding: 12px;
+                                                    }
+                                                
+                                                    .input-field,
+                                                    .dropdown-btn {
+                                                      font-size: 16px;
+                                                      padding: 4.5px;
+                                                    }
+                                                
+                                                    .submit-btn {
+                                                      font-size: 16px;
+                                                      padding: 10px;
+                                                    }
+                                                  }
+                                                </style>
+                                                
                                                 </div>
                                               </div>
                                             </div>
