@@ -31598,7 +31598,7 @@
                           font-weight: 300;
                           font-family: 'wf_2f9c7cbb4a1e429ead0a7ba0d';
                           transition: color 0.3s ease;
-                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">Accueil</a>
+                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">ACCUEIL</a>
                     
                         <a href="./about.html" style="
                           text-decoration: none;
@@ -31607,7 +31607,7 @@
                           font-weight: 300;
                           font-family: 'wf_2f9c7cbb4a1e429ead0a7ba0d';
                           transition: color 0.3s ease;
-                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">À Propos</a>
+                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">À PROPOS</a>
                     
                         <a href="./services.html" style="
                           text-decoration: none;
@@ -31616,7 +31616,7 @@
                           font-weight: 300;
                           font-family: 'wf_2f9c7cbb4a1e429ead0a7ba0d';
                           transition: color 0.3s ease;
-                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">Services</a>
+                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">SERVICES</a>
                     
                         <a href="./contact.html" style="
                           text-decoration: none;
@@ -31625,7 +31625,7 @@
                           font-weight: 300;
                           font-family: 'wf_2f9c7cbb4a1e429ead0a7ba0d';
                           transition: color 0.3s ease;
-                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">Contact</a>
+                        " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">CONTACT</a>
                       </div>
                     </nav>
                     
@@ -31892,185 +31892,229 @@
                                                 <div class="form-container">
                                                   <label>PRENOM</label>
                                                   <input type="text" class="input-field" />
-                                                
+                                              
                                                   <label>NOM</label>
                                                   <input type="text" class="input-field" />
-                                                
+                                              
                                                   <label>E-MAIL *</label>
                                                   <input type="email" class="input-field" />
-                                                
+                                              
                                                   <label>TELEPHONE *</label>
                                                   <input type="tel" class="input-field" />
-                                                
+                                              
                                                   <label>Votre besoin *</label>
                                                   <div class="dropdown">
-                                                    <button class="dropdown-btn">
-                                                      ▼
-                                                    </button>
-                                                    <div class="dropdown-list">
-                                                      <div>Je souhaite créer ma stratégie de branding</div>
-                                                      <div>Je souhaite créer ou mettre à jour mon site web</div>
-                                                      <div>Je souhaite créer des supports de communication</div>
-                                                    </div>
+                                                      <button class="dropdown-btn">
+                                                          <span class="dropdown-text"></span>
+                                                          <span class="dropdown-arrow">▼</span>
+                                                      </button>
+                                                      <div class="dropdown-list">
+                                                          <div class="dropdown-item">
+                                                              <span class="dropdown-option">Je souhaite créer ma stratégie de branding</span>
+                                                          </div>
+                                                          <div class="dropdown-item">
+                                                              <span class="dropdown-option">Je souhaite créer ou mettre à jour mon site web</span>
+                                                          </div>
+                                                          <div class="dropdown-item">
+                                                              <span class="dropdown-option">Je souhaite créer des supports de communication</span>
+                                                          </div>
+                                                      </div>
                                                   </div>
-                                                
+                                              
                                                   <label>QUELQUES MOTS *</label>
                                                   <input type="text" class="input-field" />
-                                                
+                                              
                                                   <button class="submit-btn">ENVOYER</button>
-                                                </div>
-                                                
-                                                <script>
+                                              </div>
+                                              
+                                              <script>
+                                                  // Toggle dropdown visibility
                                                   document.querySelector(".dropdown-btn").addEventListener("click", function () {
-                                                    document.querySelector(".dropdown").classList.toggle("active");
+                                                      document.querySelector(".dropdown").classList.toggle("active");
                                                   });
-                                                
-                                                  document.querySelectorAll(".dropdown-list div").forEach((item) => {
-                                                    item.addEventListener("click", function () {
-                                                      document.querySelector(".dropdown-btn").innerText = this.innerText;
-                                                      document.querySelector(".dropdown").classList.remove("active");
-                                                    });
+                                              
+                                                  // Array to keep track of selected options
+                                                  let selectedOptions = [];
+                                              
+                                                  // Capture clicks on dropdown options to add/remove from the selection
+                                                  document.querySelectorAll(".dropdown-option").forEach((option, index) => {
+                                                      option.addEventListener("click", function () {
+                                                          const optionText = option.innerText;
+                                                          if (selectedOptions.includes(optionText)) {
+                                                              // Remove option from the list if it's already selected
+                                                              selectedOptions = selectedOptions.filter(item => item !== optionText);
+                                                              option.style.background = ""; // Reset background color
+                                                          } else {
+                                                              // Add option to the list if it's not selected
+                                                              selectedOptions.push(optionText);
+                                                              option.style.background = "#ddd"; // Highlight selected option
+                                                          }
+                                              
+                                                          // Update dropdown button text
+                                                          if (selectedOptions.length > 0) {
+                                                              document.querySelector(".dropdown-text").innerText = selectedOptions.join("\n");
+                                                              document.querySelector(".dropdown-arrow").style.display = "none"; // Hide arrow when something is selected
+                                                          } else {
+                                                              document.querySelector(".dropdown-text").innerText = ""; // Reset text when no options are selected
+                                                              document.querySelector(".dropdown-arrow").style.display = "inline"; // Show arrow again if no selection
+                                                          }
+                                                      });
                                                   });
-                                                
+                                              
+                                                  // Close dropdown when clicking outside
                                                   document.addEventListener("click", function (event) {
-                                                    if (!document.querySelector(".dropdown").contains(event.target)) {
-                                                      document.querySelector(".dropdown").classList.remove("active");
-                                                    }
+                                                      if (!document.querySelector(".dropdown").contains(event.target)) {
+                                                          document.querySelector(".dropdown").classList.remove("active");
+                                                      }
                                                   });
-                                                </script>
-                                                
-                                                <style>
+                                              </script>
+                                              
+                                              <style>
                                                   .form-container {
-                                                    width: 440px; /* Default width for larger screens */
-                                                    padding: 22px;
-                                                    transform: scale(1.1);
-                                                    transform-origin: center;
-                                                    font-family: "Times New Roman", serif;
-                                                    color: white;
+                                                      width: 440px; /* Default width for larger screens */
+                                                      padding: 22px;
+                                                      transform: scale(1.1);
+                                                      transform-origin: center;
+                                                      font-family: "Times New Roman", serif;
+                                                      color: white;
                                                   }
-                                                
+                                              
                                                   /* Responsive for mobile screens */
                                                   @media (max-width: 768px) {
-                                                    .form-container {
-                                                      width: 90%; /* Adjusts width dynamically */
-                                                      transform: none; /* Removes scaling on smaller screens */
-                                                      padding: 15px;
-                                                    }
+                                                      .form-container {
+                                                          width: 90%; /* Adjusts width dynamically */
+                                                          transform: none; /* Removes scaling on smaller screens */
+                                                          padding: 15px;
+                                                      }
                                                   }
-                                                
+                                              
                                                   label {
-                                                    display: block;
-                                                    margin: 22px 0 6px;
-                                                    font-weight: bold;
-                                                    color: white;
-                                                    font-family: "Times New Roman", serif;
+                                                      display: block;
+                                                      margin: 22px 0 6px;
+                                                      font-weight: bold;
+                                                      color: white;
+                                                      font-family: "Times New Roman", serif;
                                                   }
-                                                
+                                              
                                                   .input-field {
-                                                    width: 100%;
-                                                    border: none;
-                                                    border-bottom: 2px solid white;
-                                                    background: transparent;
-                                                    outline: none;
-                                                    font-size: 17.6px;
-                                                    padding: 5.5px;
-                                                    color: white;
-                                                    font-family: "Times New Roman", serif;
+                                                      width: 100%;
+                                                      border: none;
+                                                      border-bottom: 2px solid white;
+                                                      background: transparent;
+                                                      outline: none;
+                                                      font-size: 17.6px;
+                                                      padding: 5.5px;
+                                                      color: white;
+                                                      font-family: "Times New Roman", serif;
                                                   }
-                                                
+                                              
                                                   .dropdown {
-                                                    position: relative;
-                                                    width: 100%;
-                                                    cursor: pointer;
+                                                      position: relative;
+                                                      width: 100%;
+                                                      cursor: pointer;
                                                   }
-                                                
+                                              
                                                   .dropdown-btn {
-                                                    width: 100%;
-                                                    background: transparent;
-                                                    border: none;
-                                                    border-bottom: 2px solid white;
-                                                    padding: 5.5px;
-                                                    font-size: 17.6px;
-                                                    text-align: left;
-                                                    cursor: pointer;
-                                                    color: white;
-                                                    font-family: "Times New Roman", serif;
+                                                      width: 100%;
+                                                      background: transparent;
+                                                      border: none;
+                                                      border-bottom: 2px solid white;
+                                                      padding: 5.5px;
+                                                      font-size: 17.6px;
+                                                      text-align: left;
+                                                      cursor: pointer;
+                                                      color: white;
+                                                      font-family: "Times New Roman", serif;
+                                                      display: flex;
+                                                      justify-content: space-between;
+                                                      align-items: center;
                                                   }
-                                                
+                                              
+                                                  .dropdown-text {
+                                                      flex: 1;
+                                                  }
+                                              
+                                                  .dropdown-arrow {
+                                                      margin-left: 10px;
+                                                      display: inline; /* Show the arrow by default */
+                                                  }
+                                              
                                                   .dropdown-list {
-                                                    display: none;
-                                                    position: absolute;
-                                                    width: 100%;
-                                                    background: white;
-                                                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-                                                    z-index: 10;
-                                                    border-radius: 5px;
-                                                    overflow: hidden;
+                                                      display: none;
+                                                      position: absolute;
+                                                      width: 100%;
+                                                      background: white;
+                                                      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                                                      z-index: 10;
+                                                      border-radius: 5px;
+                                                      overflow: hidden;
                                                   }
-                                                
+                                              
                                                   .dropdown-list div {
-                                                    padding: 11px;
-                                                    transition: background 0.3s ease;
-                                                    color: black;
+                                                      padding: 11px;
+                                                      transition: background 0.3s ease;
+                                                      color: black;
                                                   }
-                                                
+                                              
                                                   .dropdown-list div:hover {
-                                                    background: #ddd;
+                                                      background: #ddd;
                                                   }
-                                                
+                                              
                                                   .dropdown.active .dropdown-list {
-                                                    display: block;
-                                                    animation: fadeIn 0.3s ease-in-out;
+                                                      display: block;
+                                                      animation: fadeIn 0.3s ease-in-out;
                                                   }
-                                                
+                                              
                                                   @keyframes fadeIn {
-                                                    from {
-                                                      opacity: 0;
-                                                      transform: translateY(-10px);
-                                                    }
-                                                    to {
-                                                      opacity: 1;
-                                                      transform: translateY(0);
-                                                    }
+                                                      from {
+                                                          opacity: 0;
+                                                          transform: translateY(-10px);
+                                                      }
+                                                      to {
+                                                          opacity: 1;
+                                                          transform: translateY(0);
+                                                      }
                                                   }
-                                                
+                                              
                                                   .submit-btn {
-                                                    width: 100%;
-                                                    background: black;
-                                                    color: white;
-                                                    padding: 11px;
-                                                    border: none;
-                                                    margin-top: 22px;
-                                                    cursor: pointer;
-                                                    font-size: 17.6px;
-                                                    text-align: center;
-                                                    font-family: "Times New Roman", serif;
+                                                      width: 100%;
+                                                      background: black;
+                                                      color: white;
+                                                      padding: 11px;
+                                                      border: none;
+                                                      margin-top: 22px;
+                                                      cursor: pointer;
+                                                      font-size: 17.6px;
+                                                      text-align: center;
+                                                      font-family: "Times New Roman", serif;
                                                   }
-                                                
+                                              
                                                   .submit-btn:hover {
-                                                    background: #333;
+                                                      background: #333;
                                                   }
-                                                
+                                              
                                                   /* Responsive styles for smaller screens */
                                                   @media (max-width: 480px) {
-                                                    .form-container {
-                                                      width: 95%;
-                                                      padding: 12px;
-                                                    }
-                                                
-                                                    .input-field,
-                                                    .dropdown-btn {
-                                                      font-size: 16px;
-                                                      padding: 4.5px;
-                                                    }
-                                                
-                                                    .submit-btn {
-                                                      font-size: 16px;
-                                                      padding: 10px;
-                                                    }
+                                                      .form-container {
+                                                          width: 95%;
+                                                          padding: 12px;
+                                                      }
+                                              
+                                                      .input-field,
+                                                      .dropdown-btn {
+                                                          font-size: 16px;
+                                                          padding: 4.5px;
+                                                      }
+                                              
+                                                      .submit-btn {
+                                                          font-size: 16px;
+                                                          padding: 10px;
+                                                      }
                                                   }
-                                                </style>
-                                                
+                                              </style>
+                                              
+
+              
                                                 </div>
                                               </div>
                                             </div>
