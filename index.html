@@ -15307,63 +15307,73 @@
 
                       
                         <div style="width: 0.1%; background-color: white; height: 0.1px;">
-                          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+                          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
                           <nav style="
-                          width: 100%;
-                          background: white;
-                          display: flex;
-                          justify-content: flex-end;
-                          align-items: center;
-                          padding: 3px 9px;
-                          /* font-family: 'Playfair Display'; */
-    
-                          position: fixed;
-                          top: 0;
-                          left: 0;
-                          z-index: 100;
-                          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                        " 
-                        
-                        >
-                          <div class="nav-links font_2" style="
+                            width: 100%;
+                            background: white;
                             display: flex;
-                            gap: 25px;
-                            padding-right: 50px;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 8px 20px;
+                            font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 100;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                           ">
-                            <a href="./index.html" style="
+                            <div class="nav-links" style="
+                              display: flex;
+                              gap: 20px;
+                              padding-right: 40px;
+                            ">
+                              <a href="./index.html" class="nav-link" id="branding">Accueil</a>
+                              <a href="./about.html" class="nav-link" id="about">À Propos</a>
+                              <a href="./services.html" class="nav-link" id="services">Services</a>
+                              <a href="./contact.html" class="nav-link" id="contact">Contact</a>
+                            </div>
+                          </nav>
+                          
+                          <style>
+                            .nav-link {
                               text-decoration: none;
                               color: black;
-                              font-size: 18px;
-                              font-weight: 300;
+                              font-size: 16px;
+                              font-weight: 400; /* Lighter font weight */
+                              text-transform: uppercase;
+                              letter-spacing: 1px;
+                              line-height: 26px;
                               transition: color 0.3s ease;
-                            " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">ACCUEIL</a>
-                        
-                            <a href="./about.html" style="
-                              text-decoration: none;
+                              font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                            }
+                          
+                            .nav-link.active {
+                              font-weight: 500; /* Slightly bolder for active link */
+                              text-decoration: underline;
                               color: black;
-                              font-size: 18px;
-                              font-weight: 300;
-                              transition: color 0.3s ease;
-                            " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">À PROPOS</a>
-                        
-                            <a href="./services.html" style="
-                              text-decoration: none;
-                              color: black;
-                              font-size: 18px;
-                              font-weight: 300;
-                              transition: color 0.3s ease;
-                            " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">SERVICES</a>
-                        
-                            <a href="./contact.html" style="
-                              text-decoration: none;
-                              color: black;
-                              font-size: 18px;
-                              font-weight: 300;
-                              transition: color 0.3s ease;
-                            " onmouseover="this.style.color='gray'" onmouseout="this.style.color='black'">CONTACT</a>
-                          </div>
-                        </nav>
+                            }
+                          </style>
+                          
+                          <script>
+                            // Add "active" class to the clicked link
+                            const links = document.querySelectorAll('.nav-link');
+                            links.forEach(link => {
+                              link.addEventListener('click', () => {
+                                links.forEach(l => l.classList.remove('active')); // Remove active class from all links
+                                link.classList.add('active'); // Add active class to clicked link
+                              });
+                            });
+                          
+                            // Optional: Add active class on page load based on the current page
+                            const currentPage = window.location.pathname.split('/').pop(); // Get current page
+                            if (currentPage) {
+                              const activeLink = document.getElementById(currentPage.split('.')[0]);
+                              if (activeLink) {
+                                activeLink.classList.add('active');
+                              }
+                            }
+                          </script>
                         
                         
                         </div>
