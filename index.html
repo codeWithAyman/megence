@@ -15365,7 +15365,7 @@
                               });
                             });
                           
-                            // Optional: Add active class on page load based on the current page
+                            // Add active class on page load based on the current page
                             const currentPage = window.location.pathname.split('/').pop(); // Get current page
                             if (currentPage) {
                               const activeLink = document.getElementById(currentPage.split('.')[0]);
@@ -15373,7 +15373,16 @@
                                 activeLink.classList.add('active');
                               }
                             }
+                          
+                            // Make "Accueil" active if it's the index page
+                            if (window.location.pathname.includes('index.html') || window.location.pathname.includes('accueil')) {
+                              const accueilLink = document.getElementById('branding');
+                              if (accueilLink) {
+                                accueilLink.classList.add('active');
+                              }
+                            }
                           </script>
+                          
                         
                         
                         </div>
