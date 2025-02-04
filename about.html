@@ -12460,73 +12460,82 @@
                         tabindex="-1"
                         class="iek5a-container"
                       >
-                      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-                      <nav style="
+                      <link
+                      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
+                      rel="stylesheet"
+                    />
+                    
+                    <nav
+                      style="
                         width: 100%;
                         background: white;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
                         padding: 13px 20px;
-                        font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                        font-family: 'Mukta', sans-serif; /* Sleek and thinner font */
                         position: fixed;
                         top: 0;
                         left: 0;
                         z-index: 100;
                         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                      ">
-                        <div class="nav-links" style="
+                      "
+                    >
+                      <div
+                        class="nav-links"
+                        style="
                           display: flex;
                           gap: 20px;
                           padding-right: 40px;
-                        ">
-                          <a href="./index.html" class="nav-link" id="branding">Accueil</a>
-                          <a href="./about.html" class="nav-link" id="about">À Propos</a>
-                          <a href="./services.html" class="nav-link" id="services">Services</a>
-                          <a href="./contact.html" class="nav-link" id="contact">Contact</a>
-                        </div>
-                      </nav>
-                      
-                      <style>
-                        .nav-link {
-                          text-decoration: none;
-                          color: black;
-                          font-size: 16px;
-                          font-weight: 400; /* Lighter font weight */
-                          text-transform: uppercase;
-                          letter-spacing: 1px;
-                          line-height: 26px;
-                          transition: color 0.3s ease;
-                          font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
-                        }
-                      
-                        .nav-link.active {
-                          font-weight: 500; /* Slightly bolder for active link */
-                          text-decoration: underline;
-                          color: black;
-                        }
-                      </style>
-                      
-                      <script>
-                        // Add "active" class to the clicked link
-                        const links = document.querySelectorAll('.nav-link');
-                        links.forEach(link => {
-                          link.addEventListener('click', () => {
-                            links.forEach(l => l.classList.remove('active')); // Remove active class from all links
-                            link.classList.add('active'); // Add active class to clicked link
-                          });
+                        "
+                      >
+                        <a href="./index.html" class="nav-link" id="branding">Accueil</a>
+                        <a href="./about.html" class="nav-link" id="about">À Propos</a>
+                        <a href="./services.html" class="nav-link" id="services">Services</a>
+                        <a href="./contact.html" class="nav-link" id="contact">Contact</a>
+                      </div>
+                    </nav>
+                    
+                    <style>
+                      .nav-link {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 300; /* Thinner font weight */
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                        transition: color 0.3s ease;
+                        font-family: "Mukta", sans-serif; /* Sleek and thinner font */
+                      }
+                    
+                      .nav-link.active {
+                        font-weight: 400; /* Slightly bolder for active link */
+                        text-decoration: underline;
+                        color: black;
+                      }
+                    </style>
+                    
+                    <script>
+                      // Add "active" class to the clicked link
+                      const links = document.querySelectorAll(".nav-link");
+                      links.forEach((link) => {
+                        link.addEventListener("click", () => {
+                          links.forEach((l) => l.classList.remove("active")); // Remove active class from all links
+                          link.classList.add("active"); // Add active class to clicked link
                         });
-                      
-                        // Optional: Add active class on page load based on the current page
-                        const currentPage = window.location.pathname.split('/').pop(); // Get current page
-                        if (currentPage) {
-                          const activeLink = document.getElementById(currentPage.split('.')[0]);
-                          if (activeLink) {
-                            activeLink.classList.add('active');
-                          }
+                      });
+                    
+                      // Optional: Add active class on page load based on the current page
+                      const currentPage = window.location.pathname.split("/").pop(); // Get current page
+                      if (currentPage) {
+                        const activeLink = document.getElementById(currentPage.split(".")[0]);
+                        if (activeLink) {
+                          activeLink.classList.add("active");
                         }
-                      </script>
+                      }
+                    </script>
+                    
 
                         <main
                           id="PAGE_SECTIONSiek5a"
@@ -12557,15 +12566,18 @@
                               ></div>
                             </div>
                             <div
+                              style="padding-bottom: 30px"
                               id="comp-lwd78xba"
                               class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd78xba wixui-rich-text"
                               data-testid="richTextElement"
                             >
-                              <h2 class="font_2 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  >MEET THE FOUNDER</span
+                              <!-- <h2 class="font_2 wixui-rich-text__text">
+                                <span
+                                  style="margin-top: 20px"
+                                  class="wixui-rich-text__text"
+                                  >RENCONTRE AVEC LA FONDATRICE</span
                                 >
-                              </h2>
+                              </h2> -->
                             </div>
                             <div
                               id="comp-lwd78xbb10"
@@ -12580,14 +12592,13 @@
                                 <wow-image
                                   id="img-comp-lwd78xbb10"
                                   data-is-responsive="true"
-                                  data-image-info='{"containerId":"comp-lwd78xbb10","alignType":"center","parallaxSpeed":1.5,"sourceSets":[],"imageData":{"uri":"95dd7e_a6145fac2d0a4e31a199b90697b1289a~mv2.jpg","width":1647,"height":2000,"alt":"","name":"DSC03628-2_edited.jpg","crop":{"x":170,"y":0,"width":1393,"height":2000,"svgId":"","flip":"none"},"displayMode":"fill","focalPoint":{"x":50,"y":50},"scrollEffect":"none"},"hasAnimation":false,"encoding":"AVIF"}'
                                   data-has-ssr-src="true"
                                   data-motion-part="BG_IMG comp-lwd78xbb10"
                                   class="Ux33nC"
                                   ><picture
                                     ><img
                                       fetchpriority="high"
-                                      src="./about_files/DSC03628-2_edited.jpg"
+                                      src="./images/about.jpeg"
                                       alt=""
                                       style="
                                         object-fit: cover;
@@ -12605,10 +12616,10 @@
                             >
                               <h2 class="font_2 wixui-rich-text__text">
                                 <span class="wixui-rich-text__text"
-                                  >L'UNIVERS DE<br
+                                  >Une Passion pour la Création,<br
                                     class="wixui-rich-text__text"
                                   />
-                                  DESIGN ME</span
+                                  une Expertise en Marketing</span
                                 >
                               </h2>
                             </div>
@@ -12922,7 +12933,7 @@
                                   ></wow-image>
                                 </div>
                               </div>
-                              <div
+                              <!-- <div
                                 id="comp-lwda8br4"
                                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwda8br4 wixui-rich-text"
                                 data-testid="richTextElement"
@@ -12934,7 +12945,7 @@
                                     VISUELLES MODERNES ET CRÉATIVES.</span
                                   >
                                 </h2>
-                              </div>
+                              </div> -->
                               <div
                                 class="comp-lwfgqw24 UHSxqn"
                                 id="comp-lwfgqw24"
@@ -13012,7 +13023,8 @@
                                     ><span
                                       style="font-weight: 400"
                                       class="wixui-rich-text__text"
-                                      >Une Vision Entrepreneuriale</span
+                                      >Une Passion pour la Création, une
+                                      Expertise en Marketing.</span
                                     ></span
                                   ></span
                                 >
@@ -13023,126 +13035,106 @@
                               class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd79bx22 wixui-rich-text"
                               data-testid="richTextElement"
                             >
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >L'AVENTURE Magence DÉBUTE PAR UNE
-                                    RECONVERSION PROFESSIONNELLE AUDACIEUSE.
-                                    APRÈS 10 ANS&nbsp;DANS LE MONDE DE LA
-                                    FINANCE, J'AI FAIT LE SAUT VERS
-                                    L'ENTREPRENEURIAT ET LE DESIGN GRAPHIQUE.
-                                  </span></span
-                                >
-                              </p>
-
                               <p class="font_8 wixui-rich-text__text">&nbsp;</p>
 
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >EN COMMENÇANT EN AUTODIDACTE DANS LA
-                                    SIGNALÉTIQUE ÉVÉNEMENTIELLE, Magence S'EST
-                                    TRANSFORMÉ EN UN STUDIO DE CRÉATION
-                                    GRAPHIQUE, SPÉCIALISÉ DANS LE BRANDING ET
-                                    LES STRATÉGIES DE MARKETING.
-                                  </span></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">&nbsp;</p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >CES TROIS DERNIÈRES ANNÉES, NOUS AVONS
-                                    ACCOMPAGNÉ LES PROFESSIONNELS DE
-                                    L'ÉVÉNEMENTIEL DANS LA CONCEPTION DE DÉTAILS
-                                    ESTHÉTIQUES ET SIGNIFICATIFS.</span
-                                  ></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >LANCER MES PROPRES PROJETS A NÉCESSITÉ DE
-                                    LES PROMOUVOIR VIA LES RÉSEAUX SOCIAUX ET
-                                    D'ENDOSSER LES MULTIPLES CASQUETTES DE
-                                    L'ENTREPRENEUR. CETTE POLYVALENCE A FORGÉ
-                                    L'IDENTITÉ ET LA MISSION DE Magence.
-                                  </span></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">&nbsp;</p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >CHEZ Magence, NOUS CROYONS EN LA PUISSANCE
-                                    DE RACONTER DES HISTOIRES. NOTRE MISSION EST
-                                    DE RETRANSCRIRE DES ÉMOTIONS, DES AMBIANCES
-                                    ET DES VALEURS. NOUS PRENONS PLAISIR À
-                                    DONNER VIE À VOS RÊVES ET À VOTRE
-                                    UNIVERS.</span
-                                  ></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    ><span
-                                      class="wixGuard wixui-rich-text__text"
-                                      >​</span
-                                    ></span
-                                  ></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >CHAQUE PROJET EST ABORDÉ AVEC UNE PASSION
-                                    PROFONDE POUR LES DÉTAILS ET UN ENGAGEMENT
-                                    SINCÈRE ENVERS L'HISTOIRE DE NOS CLIENTS.
-                                    Magence ACCOMPAGNE LES PORTEURS DE PROJETS,
-                                    MARQUES ET CRÉATEURS EN METTANT EN LUMIÈRE
-                                    LEUR AUTHENTICITÉ ET LEUR SINGULARITÉ.
-                                    CHAQUE LOGO, CHAQUE COULEUR ET CHAQUE DÉTAIL
-                                    SONT SÉLECTIONNÉS AVEC UNE ATTENTION ET UN
-                                    SOIN MINUTIEUX POUR RÉPONDRE AU MIEUX À VOS
-                                    ENVIES. AINSI, NOUS TRANSFORMONS VOS IDÉES
-                                    EN IDENTITÉS VISUELLES ET VOS SOUHAITS EN
-                                    RÉALITÉ GRAPHIQUE.</span
-                                  ></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    ><span
-                                      class="wixGuard wixui-rich-text__text"
-                                      >​</span
-                                    ></span
-                                  ></span
-                                >
-                              </p>
-
-                              <p class="font_8 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  ><span class="color_14 wixui-rich-text__text"
-                                    >NOTRE ANCIEN ATELIER EST DEVENU UN STUDIO
-                                    CRÉATIF, UN ESPACE CONVIVIAL ET CHALEUREUX
-                                    IDÉAL POUR ORGANISER DES SHOOTINGS À LA
-                                    LUMIÈRE NATURELLE, DES RÉUNIONS DE TRAVAIL,
-                                    DES SESSIONS DE BRAINSTORMING, OU SIMPLEMENT
-                                    DES RENDEZ-VOUS PROFESSIONNELS AVEC VOS
-                                    CLIENTS.</span
-                                  ></span
-                                >
-                              </p>
+                              <link
+                              href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+                              rel="stylesheet"
+                            />
+                            
+                            <style>
+                              .font_8 {
+                                font-family: "Quicksand", sans-serif; /* Thin and tall font */
+                                font-weight: 300; /* Lighter font */
+                                font-size: 18px; /* Adjust as needed */
+                                line-height: 1.8; /* Makes the text look taller */
+                                color: black;
+                              }
+                            </style>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  MAGENCE est l'aboutissement d'une passion
+                                  innée pour la création et d'une expertise
+                                  affûtée en marketing digital.
+                                </span>
+                              </span>
+                            </p>
+                            
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  Forte d'un Master en marketing digital et
+                                  animée par un désir constant de donner vie
+                                  aux idées, j'ai toujours été attirée par
+                                  l'univers du design graphique.
+                                </span>
+                              </span>
+                            </p>
+                            
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  Créer, embellir, insuffler une âme aux
+                                  choses, tel est le moteur qui m'anime depuis
+                                  toujours. Le souci du détail et l'envie de
+                                  rendre chaque projet unique sont mes marques
+                                  de fabrique.
+                                </span>
+                              </span>
+                            </p>
+                            
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  Mes proches, témoins de cette passion, ont
+                                  toujours fait appel à moi pour le lancement
+                                  de leur activité ou encore l'organisation
+                                  d'événements.
+                                </span>
+                              </span>
+                            </p>
+                            
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  Leur satisfaction, leurs encouragements et
+                                  la certitude d'avoir un talent à partager
+                                  m'ont convaincu de franchir le pas et
+                                  d'offrir mes services au monde. MAGENCE est
+                                  né de cette volonté de mettre ma créativité
+                                  et mon expertise au service de vos projets.
+                                </span>
+                              </span>
+                            </p>
+                            
+                            <p class="font_8 wixui-rich-text__text">&nbsp;</p>
+                            
+                            <p class="font_8 wixui-rich-text__text">
+                              <span class="wixui-rich-text__text">
+                                <span class="color_14 wixui-rich-text__text">
+                                  Mon parcours en marketing digital me permet
+                                  d'appréhender vos besoins avec une vision
+                                  stratégique. Je comprends les enjeux de la
+                                  communication et sais comment créer une
+                                  identité visuelle qui non seulement séduit,
+                                  mais qui atteint également vos objectifs
+                                  commerciaux.
+                                </span>
+                              </span>
+                            </p>
+                            
                             </div>
                             <div
                               id="comp-lwd79bx39"
