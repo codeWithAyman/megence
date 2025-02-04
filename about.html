@@ -12460,178 +12460,277 @@
                         tabindex="-1"
                         class="iek5a-container"
                       >
-                      <link
-                      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
-                      rel="stylesheet"
-                    />
-                    
-                    <nav
-                      style="
-                        width: 100%;
-                        background: white;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        padding: 13px 20px;
-                        font-family: 'Mukta', sans-serif; /* Sleek and thinner font */
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        z-index: 100;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                      "
-                    >
-                      <div
-                        class="nav-links"
-                        style="
-                          display: flex;
-                          gap: 20px;
-                          padding-right: 40px;
-                        "
-                      >
-                        <a href="./index.html" class="nav-link" id="branding">Accueil</a>
-                        <a href="./about.html" class="nav-link" id="about">À Propos</a>
-                        <a href="./services.html" class="nav-link" id="services">Services</a>
-                        <a href="./contact.html" class="nav-link" id="contact">Contact</a>
-                      </div>
-                    </nav>
-                    
-                    <style>
-                      .nav-link {
-                        text-decoration: none;
-                        color: black;
-                        font-size: 16px;
-                        font-weight: 300; /* Thinner font weight */
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        line-height: 26px;
-                        transition: color 0.3s ease;
-                        font-family: "Mukta", sans-serif; /* Sleek and thinner font */
-                      }
-                    
-                      .nav-link.active {
-                        font-weight: 400; /* Slightly bolder for active link */
-                        text-decoration: underline;
-                        color: black;
-                      }
-                    </style>
-                    
-                    <script>
-                      // Add "active" class to the clicked link
-                      const links = document.querySelectorAll(".nav-link");
-                      links.forEach((link) => {
-                        link.addEventListener("click", () => {
-                          links.forEach((l) => l.classList.remove("active")); // Remove active class from all links
-                          link.classList.add("active"); // Add active class to clicked link
-                        });
-                      });
-                    
-                      // Optional: Add active class on page load based on the current page
-                      const currentPage = window.location.pathname.split("/").pop(); // Get current page
-                      if (currentPage) {
-                        const activeLink = document.getElementById(currentPage.split(".")[0]);
-                        if (activeLink) {
-                          activeLink.classList.add("active");
-                        }
-                      }
-                    </script>
-                    
+                        <link
+                          href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
+                          rel="stylesheet"
+                        />
+
+                        <nav
+                          style="
+                            width: 100%;
+                            background: white;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 13px 20px;
+                            font-family: 'Mukta', sans-serif; /* Sleek and thinner font */
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 100;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            z-index: 1000;
+                          "
+                        >
+                          <div
+                            class="nav-links"
+                            style="
+                              display: flex;
+                              gap: 20px;
+                              padding-right: 40px;
+                            "
+                          >
+                            <a
+                              href="./index.html"
+                              class="nav-link"
+                              id="branding"
+                              >Accueil</a
+                            >
+                            <a href="./about.html" class="nav-link" id="about"
+                              >À Propos</a
+                            >
+                            <a
+                              href="./services.html"
+                              class="nav-link"
+                              id="services"
+                              >Services</a
+                            >
+                            <a
+                              href="./contact.html"
+                              class="nav-link"
+                              id="contact"
+                              >Contact</a
+                            >
+                          </div>
+                        </nav>
+
+                        <style>
+                          .nav-link {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 16px;
+                            font-weight: 300; /* Thinner font weight */
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            line-height: 26px;
+                            transition: color 0.3s ease;
+                            font-family: "Mukta", sans-serif; /* Sleek and thinner font */
+                          }
+
+                          .nav-link.active {
+                            font-weight: 400; /* Slightly bolder for active link */
+                            text-decoration: underline;
+                            color: black;
+                          }
+                        </style>
+
+                        <script>
+                          // Add "active" class to the clicked link
+                          const links = document.querySelectorAll(".nav-link");
+                          links.forEach((link) => {
+                            link.addEventListener("click", () => {
+                              links.forEach((l) =>
+                                l.classList.remove("active")
+                              ); // Remove active class from all links
+                              link.classList.add("active"); // Add active class to clicked link
+                            });
+                          });
+
+                          // Optional: Add active class on page load based on the current page
+                          const currentPage = window.location.pathname
+                            .split("/")
+                            .pop(); // Get current page
+                          if (currentPage) {
+                            const activeLink = document.getElementById(
+                              currentPage.split(".")[0]
+                            );
+                            if (activeLink) {
+                              activeLink.classList.add("active");
+                            }
+                          }
+                        </script>
+
                         <main
                           id="PAGE_SECTIONSiek5a"
                           class="PAGE_SECTIONSiek5a c1rIl3"
                           data-main-content-parent="true"
                         >
-                          <section
-                            id="comp-lwd78xaq"
-                            tabindex="-1"
-                            data-block-level-container="Section"
-                            class="xuzjBY comp-lwd78xaq-container comp-lwd78xaq wixui-section undefined"
-                            data-testid="section-container"
-                          >
-                            <div
-                              id="bgLayers_comp-lwd78xaq"
-                              data-hook="bgLayers"
-                              data-motion-part="BG_LAYER comp-lwd78xaq"
-                              class="MW5IWV"
+                          <!DOCTYPE html>
+                          <html lang="fr">
+                            <head>
+                              <meta charset="UTF-8" />
+                              <meta
+                                name="viewport"
+                                content="width=device-width, initial-scale=1.0"
+                              />
+                              <title>Rencontre Avec La Fondatrice</title>
+                              <link
+                                href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+                                rel="stylesheet"
+                              />
+                            </head>
+                            <body
+                              style="
+                                margin: 0;
+                                padding: 0;
+                                background: #d1d1d1;
+                                font-family: 'Quicksand', sans-serif;
+                              "
                             >
                               <div
-                                data-testid="colorUnderlay"
-                                class="LWbAav Kv1aVt"
-                              ></div>
-                              <div
-                                id="bgMedia_comp-lwd78xaq"
-                                data-motion-part="BG_MEDIA comp-lwd78xaq"
-                                class="VgO9Yg"
-                              ></div>
-                            </div>
-                            <div
-                              style="padding-bottom: 30px"
-                              id="comp-lwd78xba"
-                              class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd78xba wixui-rich-text"
-                              data-testid="richTextElement"
-                            >
-                              <!-- <h2 class="font_2 wixui-rich-text__text">
-                                <span
-                                  style="margin-top: 20px"
-                                  class="wixui-rich-text__text"
-                                  >RENCONTRE AVEC LA FONDATRICE</span
-                                >
-                              </h2> -->
-                            </div>
-                            <div
-                              id="comp-lwd78xbb10"
-                              data-testid="imageX"
-                              class="lyNaha comp-lwd78xbb10 JdNFxG wixui-image"
-                              data-motion-part="BG_LAYER comp-lwd78xbb10"
-                            >
-                              <div
-                                class="h1DYhE"
-                                data-motion-part="BG_MEDIA comp-lwd78xbb10"
+                                style="
+                                  display: flex;
+                                  width: 100%;
+                                  background: #c5c3c6;
+                                  padding: 60px 40px;
+                                  align-items: center;
+                                  box-sizing: border-box;
+                                  position: relative;
+                                  flex-direction: column;
+                                  text-align: center;
+                                  padding-top: 0;
+                                  margin-top: 0;
+                                "
                               >
-                                <wow-image
-                                  id="img-comp-lwd78xbb10"
-                                  data-is-responsive="true"
-                                  data-has-ssr-src="true"
-                                  data-motion-part="BG_IMG comp-lwd78xbb10"
-                                  class="Ux33nC"
-                                  ><picture
-                                    ><img
-                                      fetchpriority="high"
-                                      src="./images/about.jpeg"
-                                      alt=""
-                                      style="
-                                        object-fit: cover;
-                                        object-position: 50% 50%;
-                                        width: 100%;
-                                      "
-                                      data-ssr-src-done="true" /></picture
-                                ></wow-image>
-                              </div>
-                            </div>
-                            <div
-                              id="comp-lwd78xbb1"
-                              class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd78xbb1 wixui-rich-text"
-                              data-testid="richTextElement"
-                            >
-                              <h2 class="font_2 wixui-rich-text__text">
-                                <span class="wixui-rich-text__text"
-                                  >Une Passion pour la Création,<br
-                                    class="wixui-rich-text__text"
-                                  />
-                                  une Expertise en Marketing</span
+                                <!-- Title Moved Down -->
+                                <div
+                                  style="
+                                    position: absolute;
+                                    top: 35%;
+                                    width: 100%;
+                                    left: 8%;
+                                    z-index: 999;
+                                  "
+                                  class="font_2 wixui-rich-text__text"
                                 >
-                              </h2>
-                            </div>
-                            <!-- <div
-                              id="comp-lwd78xbd2"
-                              class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd78xbd2 wixui-rich-text"
-                              data-testid="richTextElement"
-                            >
-                              <h2 class="font_2 wixui-rich-text__text">
-                                ELEVATE YOUR BRAND
-                              </h2>
-                            </div> -->
-                          </section>
+                                  <h2 class="font_2 wixui-rich-text__text">
+                                    <span class="wixui-rich-text__text">
+                                      Une passion pour la
+                                      <span
+                                        style="font-weight: bold"
+                                        class="wixui-rich-text__text"
+                                        >Création</span
+                                      >
+                                      , une expertise en
+                                      <span
+                                        style="font-weight: bold"
+                                        class="wixui-rich-text__text"
+                                        >Marketing</span
+                                      >
+                                    </span>
+                                  </h2>
+                                </div>
+
+                                <div
+                                  style="
+                                    display: flex;
+                                    width: 100%;
+                                    align-items: center;
+                                    padding-top: 120px;
+                                  "
+                                >
+                                  <!-- Left Image Section -->
+                                  <div style="flex: 1; position: relative">
+                                    <img
+                                      src="./images/about.jpeg"
+                                      alt="Fondatrice"
+                                      style="
+                                        width: 100%;
+                                        height: 150%; /* Adjust this value to make the image taller */
+                                        object-fit: cover;
+                                        display: block;
+                                      "
+                                    />
+                                  </div>
+
+                                  <!-- Right Text Section -->
+                                  <div style="flex: 1; padding: 60px 40px">
+                                    <h3
+                                      style="
+                                        text-align: right;
+                                        font-size: 24px; /* Increase font size */
+                                        font-weight: 200; /* Make the text thinner */
+                                        color: white;
+                                        margin: 0;
+                                        position: absolute;
+                                        top: 30%;
+                                        right: 13%;
+                                        font-family: 'Quicksand', sans-serif; /* Ensure using Quick Sand font */
+                                      "
+                                    >
+                                      RENCONTRE AVEC LA FONDATRICE
+                                    </h3>
+
+                                    <div
+                                      style="
+                                        padding-top: 320px; /* Increase padding-top to move the content further down */
+                                        font-size: 18px;
+                                        color: #4a4a4a;
+                                        line-height: 1.8;
+                                        font-family: 'Quicksand', sans-serif;
+                                        font-weight: 500;
+                                      "
+                                    >
+                                      <span
+                                        style="
+                                          font-weight: bold;
+                                          font-size: 22px;
+                                        "
+                                        >MAGENCE</span
+                                      >
+                                      est l'aboutissement d’une passion innée
+                                      pour la création et d’une expertise
+                                      affûtée en marketing digital. Forte d’un
+                                      Master en marketing digital et animée par
+                                      un désir constant de donner vie aux idées,
+                                      j’ai toujours été attirée par l’univers du
+                                      design graphique. Créer, embellir,
+                                      insuffler une âme aux choses, tel est le
+                                      moteur qui m’anime depuis toujours. Le
+                                      souci du détail et l’envie de rendre
+                                      chaque projet unique sont mes marques de
+                                      fabrique. Mes proches, témoins de cette
+                                      passion, ont toujours fait appel à moi
+                                      pour le lancement de leur activité ou
+                                      encore l’organisation d’événements. Leur
+                                      satisfaction, leurs encouragements et la
+                                      certitude d’avoir un talent à partager
+                                      m’ont convaincue de franchir le pas et
+                                      d’offrir mes services au monde.
+                                      <span
+                                        style="
+                                          font-weight: bold;
+                                          font-size: 22px;
+                                        "
+                                        >MAGENCE</span
+                                      >
+                                      est née de cette volonté de mettre ma
+                                      créativité et mon expertise au service de
+                                      vos projets. Mon parcours en marketing
+                                      digital me permet d’appréhender vos
+                                      besoins avec une vision stratégique. Je
+                                      comprends les enjeux de la communication
+                                      et sais comment créer une identité
+                                      visuelle qui non seulement séduit, mais
+                                      qui atteint également vos objectifs
+                                      commerciaux.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </body>
+                          </html>
+
                           <section
                             id="comp-lwd79szw"
                             tabindex="-1"
