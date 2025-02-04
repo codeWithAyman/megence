@@ -15307,89 +15307,75 @@
 
                       
                         <div style="width: 0.1%; background-color: white; height: 0.1px;">
-                          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-                          <nav style="
+                          <link
+                          href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
+                          rel="stylesheet"
+                        />
+                        
+                        <nav
+                          style="
                             width: 100%;
                             background: white;
                             display: flex;
                             justify-content: flex-end;
                             align-items: center;
                             padding: 13px 20px;
-                            font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                            font-family: 'Mukta', sans-serif;
                             position: fixed;
                             top: 0;
                             left: 0;
                             z-index: 100;
                             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                          ">
-                            <div class="nav-links" style="
+                          "
+                        >
+                          <div
+                            class="nav-links"
+                            style="
                               display: flex;
                               gap: 20px;
                               padding-right: 40px;
-                            ">
-                              <a href="./index.html" class="nav-link" id="branding">Accueil</a>
-                              <a href="./about.html" class="nav-link" id="about">À Propos</a>
-                              <a href="./services.html" class="nav-link" id="services">Services</a>
-                              <a href="./contact.html" class="nav-link" id="contact">Contact</a>
-                            </div>
-                          </nav>
-                          
-                          <style>
-                            .nav-link {
-                              text-decoration: none;
-                              color: black;
-                              font-size: 16px;
-                              font-weight: 400; /* Lighter font weight */
-                              text-transform: uppercase;
-                              letter-spacing: 1px;
-                              line-height: 26px;
-                              transition: color 0.3s ease;
-                              font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                            "
+                          >
+                            <a href="./index.html" class="nav-link active" id="branding">Accueil</a>
+                            <a href="./about.html" class="nav-link" id="about">À Propos</a>
+                            <a href="./services.html" class="nav-link" id="services">Services</a>
+                            <a href="./contact.html" class="nav-link" id="contact">Contact</a>
+                          </div>
+                        </nav>
+                        
+                        <style>
+                          .nav-link {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 16px;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            line-height: 26px;
+                            transition: color 0.3s ease;
+                            font-family: "Mukta", sans-serif;
+                          }
+                        
+                          .nav-link.active {
+                            font-weight: 400; /* Make it bold */
+                            text-decoration: underline;
+                            color: black;
+                          }
+                        </style>
+                        
+                        <script>
+                          // Highlight the correct link based on the current page
+                          const currentPage = window.location.pathname.split("/").pop();
+                          const links = document.querySelectorAll(".nav-link");
+                        
+                          links.forEach((link) => {
+                            if (link.getAttribute("href") === currentPage) {
+                              links.forEach((l) => l.classList.remove("active")); // Remove active from all
+                              link.classList.add("active"); // Add active to current page
                             }
-                          
-                            /* Ensure that the Accueil link has underline and bold when it's the active page */
-                            #branding.active {
-                              font-weight: 500;
-                              text-decoration: underline;
-                              color: black;
-                            }
-                          
-                            .nav-link.active {
-                              font-weight: 500; /* Slightly bolder for active link */
-                              text-decoration: underline;
-                              color: black;
-                            }
-                          </style>
-                          
-                          <script>
-                            // Add "active" class to the clicked link
-                            const links = document.querySelectorAll('.nav-link');
-                            links.forEach(link => {
-                              link.addEventListener('click', () => {
-                                links.forEach(l => l.classList.remove('active')); // Remove active class from all links
-                                link.classList.add('active'); // Add active class to clicked link
-                              });
-                            });
-                          
-                            // Add active class on page load based on the current page
-                            const currentPage = window.location.pathname.split('/').pop(); // Get current page
-                            if (currentPage) {
-                              const activeLink = document.getElementById(currentPage.split('.')[0]);
-                              if (activeLink) {
-                                activeLink.classList.add('active');
-                              }
-                            }
-                          
-                            // Make "Accueil" active if it's the index page
-                            if (window.location.pathname.includes('index.html') || window.location.pathname.includes('accueil')) {
-                              const accueilLink = document.getElementById('branding');
-                              if (accueilLink) {
-                                accueilLink.classList.add('active');
-                              }
-                            }
-                          </script>
-                          
+                          });
+                        </script>
+                        
                         
                         </div>
                         

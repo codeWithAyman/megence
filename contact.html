@@ -31575,73 +31575,82 @@
                         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
                       </head>
-                      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-                      <nav style="
+                      <link
+                      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap"
+                      rel="stylesheet"
+                    />
+                    
+                    <nav
+                      style="
                         width: 100%;
                         background: white;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
                         padding: 13px 20px;
-                        font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
+                        font-family: 'Mukta', sans-serif; /* Sleek and thinner font */
                         position: fixed;
                         top: 0;
                         left: 0;
                         z-index: 100;
                         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                      ">
-                        <div class="nav-links" style="
+                      "
+                    >
+                      <div
+                        class="nav-links"
+                        style="
                           display: flex;
                           gap: 20px;
                           padding-right: 40px;
-                        ">
-                          <a href="./index.html" class="nav-link" id="branding">Accueil</a>
-                          <a href="./about.html" class="nav-link" id="about">À Propos</a>
-                          <a href="./services.html" class="nav-link" id="services">Services</a>
-                          <a href="./contact.html" class="nav-link" id="contact">Contact</a>
-                        </div>
-                      </nav>
-                      
-                      <style>
-                        .nav-link {
-                          text-decoration: none;
-                          color: black;
-                          font-size: 16px;
-                          font-weight: 400; /* Lighter font weight */
-                          text-transform: uppercase;
-                          letter-spacing: 1px;
-                          line-height: 26px;
-                          transition: color 0.3s ease;
-                          font-family: 'Playfair Display', serif; /* Elegant and minimalist font */
-                        }
-                      
-                        .nav-link.active {
-                          font-weight: 500; /* Slightly bolder for active link */
-                          text-decoration: underline;
-                          color: black;
-                        }
-                      </style>
-                      
-                      <script>
-                        // Add "active" class to the clicked link
-                        const links = document.querySelectorAll('.nav-link');
-                        links.forEach(link => {
-                          link.addEventListener('click', () => {
-                            links.forEach(l => l.classList.remove('active')); // Remove active class from all links
-                            link.classList.add('active'); // Add active class to clicked link
-                          });
+                        "
+                      >
+                        <a href="./index.html" class="nav-link" id="branding">Accueil</a>
+                        <a href="./about.html" class="nav-link" id="about">À Propos</a>
+                        <a href="./services.html" class="nav-link" id="services">Services</a>
+                        <a href="./contact.html" class="nav-link" id="contact">Contact</a>
+                      </div>
+                    </nav>
+                    
+                    <style>
+                      .nav-link {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 300; /* Thinner font weight */
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                        transition: color 0.3s ease;
+                        font-family: "Mukta", sans-serif; /* Sleek and thinner font */
+                      }
+                    
+                      .nav-link.active {
+                        font-weight: 400; /* Slightly bolder for active link */
+                        text-decoration: underline;
+                        color: black;
+                      }
+                    </style>
+                    
+                    <script>
+                      // Add "active" class to the clicked link
+                      const links = document.querySelectorAll(".nav-link");
+                      links.forEach((link) => {
+                        link.addEventListener("click", () => {
+                          links.forEach((l) => l.classList.remove("active")); // Remove active class from all links
+                          link.classList.add("active"); // Add active class to clicked link
                         });
-                      
-                        // Optional: Add active class on page load based on the current page
-                        const currentPage = window.location.pathname.split('/').pop(); // Get current page
-                        if (currentPage) {
-                          const activeLink = document.getElementById(currentPage.split('.')[0]);
-                          if (activeLink) {
-                            activeLink.classList.add('active');
-                          }
+                      });
+                    
+                      // Optional: Add active class on page load based on the current page
+                      const currentPage = window.location.pathname.split("/").pop(); // Get current page
+                      if (currentPage) {
+                        const activeLink = document.getElementById(currentPage.split(".")[0]);
+                        if (activeLink) {
+                          activeLink.classList.add("active");
                         }
-                      </script>
+                      }
+                    </script>
+                    
                     
                       </body>
                       </html>
@@ -31694,28 +31703,26 @@
                                     class="lyNaha comp-lwcmv6g7 JdNFxG wixui-image"
                                     data-motion-part="BG_LAYER comp-lwcmv6g7"
                                   >
-                                    <div
-                                      class="h1DYhE"
-                                      data-motion-part="BG_MEDIA comp-lwcmv6g7"
+                                  <div class="h1DYhE" data-motion-part="BG_MEDIA comp-lwcmv6g7">
+                                    <video
+                                      id="video-comp-lwcmv6g7"
+                                      class="Ux33nC"
+                                      autoplay
+                                      loop
+                                      muted
+                                      playsinline
+                                      style="
+                                        object-fit: cover;
+                                        object-position: 50% 50%;
+                                        width: 100%;
+                                        height: 100%;
+                                      "
                                     >
-                                      <wow-image
-                                        id="img-comp-lwcmv6g7"
-                                        data-is-responsive="true"
-                                        data-has-ssr-src=""
-                                        data-motion-part="BG_IMG comp-lwcmv6g7"
-                                        class="Ux33nC"
-                                        ><picture
-                                          ><img
-                                            fetchpriority="high"
-                                            src="./images/contact.jpeg"
-                                            alt=""
-                                            style="
-                                              object-fit: cover;
-                                              object-position: 50% 50%;
-                                              width: 100%;
-                                            " /></picture
-                                      ></wow-image>
-                                    </div>
+                                      <source src="./images/Black And White Minimalistic Personal Finance Mobile Video (1).mp4" type="video/mp4" />
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  
                                   </div>
                                   <div
                                     id="comp-lwcmo9cl4"
