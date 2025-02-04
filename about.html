@@ -12587,109 +12587,45 @@
                                 font-family: 'Quicksand', sans-serif;
                               "
                             >
-                              <div
-                                style="
-                                  display: flex;
-                                  width: 100%;
-                                  background: #c5c3c6;
-                                  padding: 60px 40px;
-                                  align-items: center;
-                                  box-sizing: border-box;
-                                  position: relative;
-                                  flex-direction: column;
-                                  text-align: center;
-                                  padding-top: -30%;
-                                  margin-top: -10%;
-                                "
-                              >
+                              <div class="container">
                                 <!-- Title Moved Down -->
-                                <div
-                                  style="
-                                    position: absolute;
-                                    top: 35%;
-                                    width: 100%;
-                                    left: 8%;
-                                    z-index: 999;
-                                  "
-                                  class="font_2 wixui-rich-text__text"
-                                >
-                                  <h2 class="font_2 wixui-rich-text__text">
-                                    <span class="wixui-rich-text__text">
-                                      Une passion pour la
-                                      <span
-                                        style="font-weight: bold"
+                                <div class="founder-title">
+                                  <h2
+                                    class="font_2 wixui-rich-text__text"
+                                    style="font-weight: 100"
+                                  >
+                                    <span
+                                      style="font-style: normal"
+                                      class="wixui-rich-text__text"
+                                      ><span
+                                        style="font-weight: 400"
                                         class="wixui-rich-text__text"
-                                        >Création</span
-                                      >
-                                      , une expertise en
-                                      <span
-                                        style="font-weight: bold"
-                                        class="wixui-rich-text__text"
-                                        >Marketing</span
-                                      >
-                                    </span>
+                                        >Une passion pour la Création, une
+                                        expertise en Marketing</span
+                                      ></span
+                                    >
                                   </h2>
                                 </div>
 
-                                <div
-                                  style="
-                                    display: flex;
-                                    width: 100%;
-                                    align-items: center;
-                                    padding-top: 120px;
-                                  "
-                                >
+                                <div class="content">
                                   <!-- Left Image Section -->
-                                  <div style="flex: 1; position: relative">
+                                  <div class="left-image">
                                     <img
                                       src="./images/about.jpeg"
                                       alt="Fondatrice"
-                                      style="
-                                        width: 100%;
-                                        height: 150%; /* Adjust this value to make the image taller */
-                                        object-fit: cover;
-                                        display: block;
-                                      "
+                                      class="image"
                                     />
                                   </div>
 
                                   <!-- Right Text Section -->
-                                  <div style="flex: 1; padding: 60px 40px">
-                                    <h3
-                                      style="
-                                        text-align: right;
-                                        font-size: 24px; /* Increase font size */
-                                        font-weight: 200; /* Make the text thinner */
-                                        color: white;
-                                        margin: 0;
-                                        position: absolute;
-                                        top: 30%;
-                                        right: 13%;
-                                        font-family: 'Quicksand', sans-serif; /* Ensure using Quick Sand font */
-                                      "
-                                    >
+                                  <div class="right-text">
+                                    <h3 class="text-title">
                                       RENCONTRE AVEC LA FONDATRICE
                                     </h3>
 
-                                    <div
-                                      style="
-                                        padding-top: 320px; /* Increase padding-top to move the content further down */
-                                        font-size: 18px;
-                                        color: #4a4a4a;
-                                        line-height: 1.8;
-                                        font-family: 'Quicksand', sans-serif;
-                                        font-weight: 500;
-                                      "
-                                    >
-                                      <span
-                                        style="
-                                          font-weight: bold;
-                                          font-size: 22px;
-                                        "
-                                        >MAGENCE</span
-                                      >
-                                      est l'aboutissement d’une passion innée
-                                      pour la création et d’une expertise
+                                    <div class="description">
+                                      MAGENCE est l'aboutissement d’une passion
+                                      innée pour la création et d’une expertise
                                       affûtée en marketing digital. Forte d’un
                                       Master en marketing digital et animée par
                                       un désir constant de donner vie aux idées,
@@ -12706,14 +12642,7 @@
                                       satisfaction, leurs encouragements et la
                                       certitude d’avoir un talent à partager
                                       m’ont convaincue de franchir le pas et
-                                      d’offrir mes services au monde.
-                                      <span
-                                        style="
-                                          font-weight: bold;
-                                          font-size: 22px;
-                                        "
-                                        >MAGENCE</span
-                                      >
+                                      d’offrir mes services au monde. MAGENCE
                                       est née de cette volonté de mettre ma
                                       créativité et mon expertise au service de
                                       vos projets. Mon parcours en marketing
@@ -12728,6 +12657,155 @@
                                   </div>
                                 </div>
                               </div>
+
+                              <style>
+                                /* General Styles */
+                                .container {
+                                  display: flex;
+                                  width: 100%;
+                                  background: #c5c3c6;
+                                  padding: 60px 40px;
+                                  align-items: center;
+                                  box-sizing: border-box;
+                                  position: relative;
+                                  flex-direction: column;
+                                  text-align: center;
+                                  padding-top: 0;
+                                  margin-top: 0;
+                                }
+
+                                .founder-title {
+                                  position: absolute;
+                                  top: 35%;
+                                  width: 100%;
+                                  left: 8%;
+                                  z-index: 999;
+                                }
+
+                                .content {
+                                  display: flex;
+                                  width: 100%;
+                                  align-items: center;
+                                  padding-top: 120px;
+                                }
+
+                                .left-image {
+                                  flex: 1;
+                                  position: relative;
+                                }
+
+                                .left-image img {
+                                  width: 100%;
+                                  height: 150%; /* Adjust this value to make the image taller */
+                                  object-fit: cover;
+                                  display: block;
+                                }
+
+                                .right-text {
+                                  flex: 1;
+                                  padding: 60px 40px;
+                                }
+
+                                .text-title {
+                                  text-align: right;
+                                  font-size: 24px;
+                                  font-weight: 200;
+                                  color: white;
+                                  margin: 0;
+                                  position: absolute;
+                                  top: 30%;
+                                  right: 7%;
+                                  font-family: "Quicksand", sans-serif;
+                                }
+
+                                .description {
+                                  padding-top: 320px;
+                                  font-size: 18px;
+                                  color: #4a4a4a;
+                                  line-height: 1.8;
+                                  font-family: "Quicksand", sans-serif;
+                                  font-weight: 500;
+                                }
+
+                                /* Responsive Design */
+                                @media (max-width: 1024px) {
+                                  /* For iPad and smaller screens */
+                                  /* Hide the original title and description */
+                                  .founder-title,
+                                  .description {
+                                    display: none;
+                                  }
+
+                                  /* Stack image and text in a column */
+                                  .content {
+                                    flex-direction: column;
+                                  }
+
+                                  .left-image,
+                                  .right-text {
+                                    flex: none;
+                                    width: 100%;
+                                    padding: 20px;
+                                  }
+
+                                  .text-title {
+                                    position: static;
+                                    font-size: 20px; /* Adjust font size for tablets */
+                                    text-align: center; /* Center title on tablets */
+                                    margin: 20px 0;
+                                  }
+
+                                  /* Add a new div for mobile with full text */
+                                  .mobile-description {
+                                    display: block;
+                                    font-size: 16px; /* Smaller text for tablets */
+                                    padding: 20px;
+                                    color: #4a4a4a;
+                                    line-height: 1.8;
+                                    font-family: "Quicksand", sans-serif;
+                                    font-weight: 500;
+                                  }
+                                }
+
+                                /* For phone screens */
+                                @media (max-width: 768px) {
+                                  /* Hide the original title and description */
+                                  .founder-title,
+                                  .description {
+                                    display: none;
+                                  }
+
+                                  /* Stack image and text in a column */
+                                  .content {
+                                    flex-direction: column;
+                                  }
+
+                                  .left-image,
+                                  .right-text {
+                                    flex: none;
+                                    width: 100%;
+                                    padding: 20px;
+                                  }
+
+                                  .text-title {
+                                    position: static;
+                                    font-size: 18px; /* Adjust font size for phones */
+                                    text-align: center; /* Center title on phones */
+                                    margin: 20px 0;
+                                  }
+
+                                  /* Add a new div for mobile with full text */
+                                  .mobile-description {
+                                    display: block;
+                                    font-size: 14px; /* Smaller text for phones */
+                                    padding: 20px;
+                                    color: #4a4a4a;
+                                    line-height: 1.8;
+                                    font-family: "Quicksand", sans-serif;
+                                    font-weight: 500;
+                                  }
+                                }
+                              </style>
                             </body>
                           </html>
 
