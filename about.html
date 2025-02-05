@@ -12588,14 +12588,14 @@
                               "
                             >
                               <div class="container">
-                                <!-- Title Moved Down -->
+                                <!-- Title (Visible in both mobile and tablet) -->
                                 <div
                                   id="comp-lwd79bx02"
                                   class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lwd79bx02 wixui-rich-text founder-title"
                                   data-testid="richTextElement"
                                 >
                                   <h2
-                                    class="font_2 wixui-rich-text__text"
+                                    class="font_2 wixui-rich-text__text gone"
                                     id="dynamicText"
                                     style="
                                       font-size: 35px;
@@ -12618,7 +12618,7 @@
                                           'wf_2f9c7cbb4a1e429ead0a7ba0d',
                                           'orig_miracle', sans-serif;
                                       "
-                                      class="wixui-rich-text__text"
+                                      class="wixui-rich-text__text gone"
                                     >
                                       UNE PASSION POUR LA CRÉATION, UNE
                                       EXPERTISE EN MARKETING
@@ -12642,7 +12642,75 @@
                                       RENCONTRE AVEC LA FONDATRICE
                                     </h3>
 
+                                    <!-- Original Description for larger screens -->
                                     <div class="description">
+                                      MAGENCE est l'aboutissement d’une passion
+                                      innée pour la création et d’une expertise
+                                      affûtée en marketing digital. Forte d’un
+                                      Master en marketing digital et animée par
+                                      un désir constant de donner vie aux idées,
+                                      j’ai toujours été attirée par l’univers du
+                                      design graphique. Créer, embellir,
+                                      insuffler une âme aux choses, tel est le
+                                      moteur qui m’anime depuis toujours. Le
+                                      souci du détail et l’envie de rendre
+                                      chaque projet unique sont mes marques de
+                                      fabrique. Mes proches, témoins de cette
+                                      passion, ont toujours fait appel à moi
+                                      pour le lancement de leur activité ou
+                                      encore l’organisation d’événements. Leur
+                                      satisfaction, leurs encouragements et la
+                                      certitude d’avoir un talent à partager
+                                      m’ont convaincue de franchir le pas et
+                                      d’offrir mes services au monde. MAGENCE
+                                      est née de cette volonté de mettre ma
+                                      créativité et mon expertise au service de
+                                      vos projets. Mon parcours en marketing
+                                      digital me permet d’appréhender vos
+                                      besoins avec une vision stratégique. Je
+                                      comprends les enjeux de la communication
+                                      et sais comment créer une identité
+                                      visuelle qui non seulement séduit, mais
+                                      qui atteint également vos objectifs
+                                      commerciaux.
+                                    </div>
+
+                                    <!-- Mobile-specific Description -->
+                                    <div class="mobile-description">
+                                      MAGENCE est l'aboutissement d’une passion
+                                      innée pour la création et d’une expertise
+                                      affûtée en marketing digital. Forte d’un
+                                      Master en marketing digital et animée par
+                                      un désir constant de donner vie aux idées,
+                                      j’ai toujours été attirée par l’univers du
+                                      design graphique. Créer, embellir,
+                                      insuffler une âme aux choses, tel est le
+                                      moteur qui m’anime depuis toujours. Le
+                                      souci du détail et l’envie de rendre
+                                      chaque projet unique sont mes marques de
+                                      fabrique. Mes proches, témoins de cette
+                                      passion, ont toujours fait appel à moi
+                                      pour le lancement de leur activité ou
+                                      encore l’organisation d’événements. Leur
+                                      satisfaction, leurs encouragements et la
+                                      certitude d’avoir un talent à partager
+                                      m’ont convaincue de franchir le pas et
+                                      d’offrir mes services au monde. MAGENCE
+                                      est née de cette volonté de mettre ma
+                                      créativité et mon expertise au service de
+                                      vos projets. Mon parcours en marketing
+                                      digital me permet d’appréhender vos
+                                      besoins avec une vision stratégique. Je
+                                      comprends les enjeux de la communication
+                                      et sais comment créer une identité
+                                      visuelle qui non seulement séduit, mais
+                                      qui atteint également vos objectifs
+                                      commerciaux.
+                                    </div>
+
+                                    <!-- Tablet-specific Description -->
+                                    <div class="tablet-description"> 
+                                      
                                       MAGENCE est l'aboutissement d’une passion
                                       innée pour la création et d’une expertise
                                       affûtée en marketing digital. Forte d’un
@@ -12689,7 +12757,6 @@
                                   position: relative;
                                   flex-direction: column;
                                   text-align: center;
-
                                   padding-top: 20px; /* Reduce padding to move it up */
                                   margin-top: -210px; /* Use a negative margin to shift it higher */
                                 }
@@ -12749,13 +12816,31 @@
                                   font-weight: 500;
                                 }
 
+                                .mobile-description,
+                                .tablet-description {
+                                  display: none; /* Initially hidden */
+                                }
+
                                 /* Responsive Design */
                                 @media (max-width: 1024px) {
                                   /* For iPad and smaller screens */
-                                  /* Hide the original title and description */
-                                  .founder-title,
+                                  .hidden {
+                                    display: none; /* Hide elements with the hidden class on tablets */
+                                  }
+
                                   .description {
-                                    display: none;
+                                    display: none; /* Hide the description for tablets */
+                                  }
+
+                                  /* Show tablet-specific description */
+                                  .tablet-description {
+                                    display: block;
+                                    font-size: 16px; /* Smaller text for tablets */
+                                    padding-top: 80%;
+                                    color: white;
+                                    line-height: 1.8;
+                                    font-family: "Quicksand", sans-serif;
+                                    font-weight: 500;
                                   }
 
                                   /* Stack image and text in a column */
@@ -12776,55 +12861,41 @@
                                     text-align: center; /* Center title on tablets */
                                     margin: 20px 0;
                                   }
-
-                                  /* Add a new div for mobile with full text */
-                                  .mobile-description {
-                                    display: block;
-                                    font-size: 16px; /* Smaller text for tablets */
-                                    padding: 20px;
-                                    color: #4a4a4a;
-                                    line-height: 1.8;
-                                    font-family: "Quicksand", sans-serif;
-                                    font-weight: 500;
-                                  }
                                 }
 
                                 /* For phone screens */
                                 @media (max-width: 768px) {
                                   /* Hide the original title and description */
-                                  .founder-title,
-                                  .description {
+                                  .hidden {
+                                    display: none; /* Hide elements with the hidden class on phones */
+                                  }
+                                  .gone {
                                     display: none;
                                   }
 
-                                  /* Stack image and text in a column */
-                                  .content {
-                                    flex-direction: column;
+                                  .founder-title {
+                                    display: none;
                                   }
-
-                                  .left-image,
-                                  .right-text {
-                                    flex: none;
-                                    width: 100%;
-                                    padding: 20px;
+                                  .description {
+                                    display: none;
                                   }
-
-                                  .text-title {
-                                    position: static;
-                                    font-size: 18px; /* Adjust font size for phones */
-                                    text-align: center; /* Center title on phones */
-                                    margin: 20px 0;
+                                  .tablet-description {
+                                    display: none;
                                   }
-
-                                  /* Add a new div for mobile with full text */
+                                  /* Show mobile-specific description */
                                   .mobile-description {
                                     display: block;
                                     font-size: 14px; /* Smaller text for phones */
-                                    padding: 20px;
-                                    color: #4a4a4a;
-                                    line-height: 1.8;
+                                    padding: 40px 20px; /* Extra padding for mobile */
+                                    padding-top: 60%;
+                                    color: white;
+                                    line-height: 1.6;
                                     font-family: "Quicksand", sans-serif;
                                     font-weight: 500;
+                                  }
+
+                                  .container {
+                                    padding-top: 80px;
                                   }
                                 }
                               </style>
