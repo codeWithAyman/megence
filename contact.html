@@ -31911,11 +31911,16 @@
                                                   "
                                                 >
                                                 <form action="https://formspree.io/f/xjkgonyz" class="form-container" method="POST">
-                                                  <label>PRENOM</label>
-                                                  <input type="text" class="input-field" name="prenom" required />
-                                                  
-                                                  <label>NOM</label>
-                                                  <input type="text" class="input-field" name="nom" required />
+                                                  <div style="display: flex; gap: 10px;">
+                                                      <div style="flex: 1;">
+                                                          <label>PRENOM</label>
+                                                          <input type="text" class="input-field" name="prenom" required />
+                                                      </div>
+                                                      <div style="flex: 1;">
+                                                          <label>NOM</label>
+                                                          <input type="text" class="input-field" name="nom" required />
+                                                      </div>
+                                                  </div>
                                                   
                                                   <label>E-MAIL *</label>
                                                   <input type="email" class="input-field" name="email" required />
@@ -31923,7 +31928,7 @@
                                                   <label>TELEPHONE *</label>
                                                   <input type="tel" class="input-field" name="telephone" required />
                                                   
-                                                  <label>VOTRE BESOIN *</label>
+                                                  <label>SECTEUR D'ACTIVITÉ *</label>
                                                   <div class="dropdown">
                                                       <button type="button" class="dropdown-btn">
                                                           <span class="dropdown-text"></span>
@@ -31947,6 +31952,7 @@
                                                   
                                                   <button type="submit" class="submit-btn">ENVOYER</button>
                                               </form>
+                                              
                                               
                                               <script>
                                                   // Toggle dropdown visibility
