@@ -12614,7 +12614,16 @@
 
                             <div class="content">
                               <!-- Left Image Section -->
+
+                              <img
+                              src="./images/top.png"
+                              alt="Fondatrice"
+                              id="gone"
+                              class="image"
+                            />
+
                               <div class="left-image">
+                            
                                 <img
                                   src="./images/about.jpeg"
                                   alt="Fondatrice"
@@ -12701,6 +12710,9 @@
                               padding-top: 20px; /* Reduce padding to move it up */
                               margin-top: -210px; /* Use a negative margin to shift it higher */
                             }
+                            #gone{
+                                display: none;
+                              }
 
                             .founder-title {
                               position: absolute;
@@ -12765,6 +12777,8 @@
                             /* Responsive Design */
                             @media (max-width: 1024px) {
                               /* For iPad and smaller screens */
+
+                            
                               .hidden {
                                 display: none; /* Hide elements with the hidden class on tablets */
                               }
@@ -12837,6 +12851,10 @@
 
                               .container {
                                 padding-top: 80px;
+                              }
+                              #gone{
+                                display: block;
+                                width:100%;
                               }
                             }
                           </style>
